@@ -76,7 +76,7 @@ const slides = [
   {
     city: '2565',
     country: 'การประชุมผู้ครองนักเรียน ประจำปีการศึกษา',
-    img: 'assets/images/preview4.jpg'
+    img: './assets/images/preview4.jpg'
   },
 
   {
