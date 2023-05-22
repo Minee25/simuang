@@ -76,30 +76,30 @@ const slides = [
   {
     city: '2565',
     country: 'การประชุมผู้ครองนักเรียน ประจำปีการศึกษา',
-    img: '../assets/images/preview4.jpg'
+    img: '../images/preview4.jpg'
   },
 
   {
     city: '',
-    img: '../assets/images/preview3.jpg'
+    img: '../images/preview3.jpg'
   },
 
   {
     city: ' ',
     country: '',
-    img: '../assets/images/preview2.jpg'
+    img: '../images/preview2.jpg'
   },
 
   {
     city: '  ',
     country: '',
-    img: '../assets/images/preview1.jpg'
+    img: '../images/preview1.jpg'
   },
 
   {
     city: '   ',
     country: '',
-    img: '../assets/images/preview5.jpg'
+    img: '../images/preview5.jpg'
   },
 ];
 
