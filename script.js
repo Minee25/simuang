@@ -70,24 +70,25 @@ class CitiesSlider extends React.Component {
   }
 }
 
-// Image src
+// Image src 
 
 const slides = [
   {
     city: '2565',
     country: 'การประชุมผู้ครองนักเรียน ประจำปีการศึกษา',
-    img: './assets/images/preview4.jpg'
+    img: 'https://www.picz.in.th/image/Fxwx5P'
   },
 
   {
     city: '',
-    img: 'assets/images/preview1.jpg'
+    img: '/assets/images/preview1.jpg'
+
   },
 
   {
     city: ' ',
     country: '',
-    img: 'assets/images/preview2.jpg'
+    img: '/assets/images/preview2.jpg'
   },
 
   {
