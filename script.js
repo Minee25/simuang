@@ -76,19 +76,19 @@ const slides = [
   {
     city: '2565',
     country: 'การประชุมผู้ครองนักเรียน ประจำปีการศึกษา',
-    img: 'https://www.picz.in.th/image/Fxwx5P'
+    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/paris.jpg'
   },
 
   {
     city: '',
-    img: '/assets/images/preview1.jpg'
+    img: 'assets/images/preview1.jpg'
 
   },
 
   {
     city: ' ',
     country: '',
-    img: '/assets/images/preview2.jpg'
+    img: 'assets/images/preview2.jpg'
   },
 
   {
