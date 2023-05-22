@@ -1,3 +1,4 @@
+// ==================== Slider Image ====================
 class CitiesSlider extends React.Component {
   constructor(props) {
     super(props);
@@ -69,45 +70,44 @@ class CitiesSlider extends React.Component {
   }
 }
 
+// Image src
 
 const slides = [
   {
     city: '2565',
     country: 'การประชุมผู้ครองนักเรียน ประจำปีการศึกษา',
-    img: 'assets/images/preview4.jpg'
+    img: '../assets/images/preview4.jpg'
   },
 
   {
     city: '',
-    img: 'assets/images/preview3.jpg'
+    img: '../assets/images/preview3.jpg'
   },
 
   {
     city: ' ',
     country: '',
-    img: 'assets/images/preview2.jpg'
+    img: '../assets/images/preview2.jpg'
   },
 
   {
     city: '  ',
     country: '',
-    img: 'assets/images/preview1.jpg'
+    img: '../assets/images/preview1.jpg'
   },
 
   {
     city: '   ',
     country: '',
-    img: 'assets/images/preview5.jpg'
+    img: '../assets/images/preview5.jpg'
   },
-
 ];
-
-
 
 ReactDOM.render( /*#__PURE__*/React.createElement(CitiesSlider, { slides: slides }), document.querySelector('#app'));
 
 
 
+// ==================== Navigation Bar ====================
 
 window.onscroll = function () { scrollFunction() };
 
@@ -120,40 +120,3 @@ function scrollFunction() {
     document.getElementById("navbar").style.background = "#343a414b";
   }
 }
-
-
-
-const toggleopen = document.querySelector(".toggleopen");
-const toggleclose = document.querySelector(".toggleclose");
-
-const dropdowncontent = document.querySelectorAll(".dropdown-content");
-
-toggleopen.addEventListener("click", () => {
-  toggleopen.classList.add("hidden");
-  toggleopen.classList.remove("open");
-
-  toggleclose.classList.remove("hidden");
-  toggleclose.classList.add("open");
-
-  dropdowncontent.forEach(dropdowncontent => {
-
-    dropdowncontent.classList.add("open");
-    dropdowncontent.classList.remove("hidden");
-  });
-});
-
-toggleclose.addEventListener("click", () => {
-  toggleclose.classList.add("hidden");
-  toggleclose.classList.remove("open");
-
-
-  toggleopen.classList.remove("hidden");
-  toggleopen.classList.add("open");
-
-
-  dropdowncontent.forEach(dropdowncontent => {
-
-    dropdowncontent.classList.remove("open");
-    dropdowncontent.classList.add("hidden");
-  });
-});
