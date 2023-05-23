@@ -76,31 +76,31 @@ const slides = [
   {
     city: '2565',
     country: 'การประชุมผู้ครองนักเรียน ประจำปีการศึกษา',
-    img: 'https://linkpicture.com/q/preview4.jpg'
+    img: 'https://sv1.picz.in.th/images/2023/05/23/FqfthP.jpg'
   },
 
   {
     city: '',
-    img: 'https://avatarfiles.alphacoders.com/296/296277.jpg'
+    img: 'https://sv1.picz.in.th/images/2023/05/23/Fqf1Ve.jpg'
 
   },
 
   {
     city: ' ',
     country: '',
-    img: 'assets/images/preview2.jpg'
+    img: 'https://sv1.picz.in.th/images/2023/05/23/FqfcRk.jpg'
   },
 
   {
     city: '  ',
     country: '',
-    img: 'assets/images/preview1.jpg'
+    img: 'https://sv1.picz.in.th/images/2023/05/23/Fqfguv.jpg'
   },
 
   {
     city: '   ',
     country: '',
-    img: 'assets/images/preview5.jpg'
+    img: 'https://sv1.picz.in.th/images/2023/05/23/FqfQDV.jpg'
   },
 ];
 
