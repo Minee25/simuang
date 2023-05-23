@@ -76,12 +76,12 @@ const slides = [
   {
     city: '2565',
     country: 'การประชุมผู้ครองนักเรียน ประจำปีการศึกษา',
-    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/paris.jpg'
+    img: 'https://linkpicture.com/q/preview4.jpg'
   },
 
   {
     city: '',
-    img: 'https://www.picz.in.th/image/Fxwx5P.jpg'
+    img: 'https://avatarfiles.alphacoders.com/296/296277.jpg'
 
   },
 
