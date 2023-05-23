@@ -207,12 +207,15 @@ header {
 
     .toggle-responsive {
         display: block;
+        border: 2px solid #fff;
+        border-radius: 5px;
     }
 
     .menu-toggle-responsive i {
         font-size: 30px;
         cursor: pointer;
         color: #fff;
+        padding: 10px;
     }
 
     /*  */

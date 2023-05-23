@@ -81,7 +81,7 @@ const slides = [
 
   {
     city: '',
-    img: 'assets/images/preview1.jpg'
+    img: 'https://www.picz.in.th/image/Fxwx5P.jpg'
 
   },
 

@@ -13,117 +13,250 @@
 </head>
 
 <body>
-    <!-- partial:index.partial.html -->
-    <!-- TAB CONTROLLERS -->
-    <input id="panel-1-ctrl" class="panel-radios" type="radio" name="tab-radios" checked>
-    <input id="panel-2-ctrl" class="panel-radios" type="radio" name="tab-radios">
-    <!-- <input id="panel-3-ctrl" class="panel-radios" type="radio" name="tab-radios"> -->
-    <!-- <input id="panel-4-ctrl" class="panel-radios" type="radio" name="tab-radios"> -->
-    <!-- <input id="panel-5-ctrl" class="panel-radios" type="radio" name="tab-radios"> -->
-    <input id="nav-ctrl" class="panel-radios" type="checkbox" name="nav-checkbox">
+    <div class="container">
+        <!-- <div class="bg">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPKZU92cqpnMzYLHGhAPf2557i86RJlBJmqdVeV=s680-w680-h510"
+                alt="">
+        </div> -->
+        <!-- partial:index.partial.html -->
+        <!-- TAB CONTROLLERS -->
+        <input id="panel-1-ctrl" class="panel-radios" type="radio" name="tab-radios" checked>
+        <input id="panel-2-ctrl" class="panel-radios" type="radio" name="tab-radios">
+        <!-- <input id="panel-3-ctrl" class="panel-radios" type="radio" name="tab-radios"> -->
+        <!-- <input id="panel-4-ctrl" class="panel-radios" type="radio" name="tab-radios"> -->
+        <!-- <input id="panel-5-ctrl" class="panel-radios" type="radio" name="tab-radios"> -->
+        <input id="nav-ctrl" class="panel-radios" type="checkbox" name="nav-checkbox">
 
-    <header id="introduction">
-        <h1>บุคลากร</h1>
-    </header>
-    <img style="
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 240px;
-    " src="../assets/images/Move_Forward_Party_Logo.svg.png" alt="">
+        <header id="introduction">
+            <h1>บุคลากร</h1>
+        </header>
 
-
-    <!-- TABS LIST -->
-    <ul id="tabs-list">
-        <!-- MENU TOGGLE -->
-        <label id="open-nav-label" for="nav-ctrl"></label>
-        <li id="li-for-panel-1">
-            <label class="panel-label" for="panel-1-ctrl">คณะผู้บริหาร</label>
-        </li><!--INLINE-BLOCK FIX
+        <!-- TABS LIST -->
+        <ul id="tabs-list">
+            <!-- MENU TOGGLE -->
+            <label id="open-nav-label" for="nav-ctrl"></label>
+            <li id="li-for-panel-1">
+                <label class="panel-label" for="panel-1-ctrl">คณะผู้บริหาร</label>
+            </li><!--INLINE-BLOCK FIX
 -->
-        <li id="li-for-panel-2">
-            <label class="panel-label" for="panel-2-ctrl">ข้อมูลครู/บุคลากร</label>
-        </li><!--INLINE-BLOCK FIX
+            <li id="li-for-panel-2">
+                <label class="panel-label" for="panel-2-ctrl">ข้อมูลครู/บุคลากร</label>
+            </li><!--INLINE-BLOCK FIX
 -->
-        <label id="close-nav-label" for="nav-ctrl">Close</label>
-    </ul>
+            <label id="close-nav-label" for="nav-ctrl">Close</label>
+        </ul>
 
-    <!-- THE PANELS -->
-    <article id="panels">
-        <div class="container">
-            <section id="panel-1">
-                <main>
+        <!-- THE PANELS -->
+        <article id="panels">
+            <div class="container">
+                <section id="panel-1">
+                    <main>
 
-                    <h1>คณะผู้บริหาร</h1>
-                    <div class="box-management-team">
-                        <div class="director">
-                            <div class="avatar">
-                                <img src="../assets/images/school director.jpg" alt="director">
+                        <h1>คณะผู้บริหาร</h1>
+                        <div class="box-management-team">
+                            <div class="director">
+                                <div class="avatar">
+                                    <img src="../assets/images/school director.jpg" alt="director">
+                                </div>
+                                <div class="info">
+                                    <h2>ว่าที่ร้อยตรีเรืองยศ ธนาธิบดี</h2>
+                                    <h3>ผู้อำนวยการ</h3>
+                                    <h3>โรงเรียนศรีเมืองวิทยาคาร</h3>
+                                </div>
                             </div>
-                            <div class="info">
-                                <h2>ว่าที่ร้อยตรีเรืองยศ ธนาธิบดี</h2>
-                                <h3>ผู้อำนวยการ</h3>
-                                <h3>โรงเรียนศรีเมืองวิทยาคาร</h3>
+                            <div style="width: 100%; border-bottom: 1px solid grey"></div>
+
+                            <div class="deputy-director">
+
+                                <div class="list-deputy-director">
+                                    <div class="avatar">
+                                        <img src="../assets/images/deputy_director1.jpg" alt="director">
+                                    </div>
+                                    <div class="info">
+                                        <h3>นายทองพูน โทสิงห์</h3>
+                                        <h4>ผู้อำนวยการ</h4>
+                                        <h4>บริหารงานทั่วไปและกิจการนักเรียน</h4>
+                                    </div>
+                                </div>
+                                <div class="list-deputy-director">
+                                    <div class="avatar">
+                                        <img src="../assets/images/deputy_director2.jpg" alt="director">
+                                    </div>
+                                    <div class="info">
+                                        <h3>นายประจวบ กำเนิดสิงห์</h3>
+                                        <h4>ผู้อำนวยการ</h4>
+                                        <h4>บริหารงานวิชาการ</h4>
+                                    </div>
+                                </div>
+                                <div class="list-deputy-director">
+                                    <div class="avatar">
+                                        <img src="../assets/images/deputy_director3.jpg" alt="director">
+                                    </div>
+                                    <div class="info">
+                                        <h3>นางฉวีวรรณ แสงทอง</h3>
+                                        <h4>ผู้อำนวยการ</h4>
+                                        <h4>บริหารแผนงานและงบประมาณ</h4>
+                                    </div>
+                                </div>
+                                <div class="list-deputy-director">
+                                    <div class="avatar">
+                                        <img src="../assets/images/deputy_director4.jpg" alt="director">
+                                    </div>
+                                    <div class="info">
+                                        <h3>นายศรัณยู เนตรมณี</h3>
+                                        <h4>ผู้อำนวยการ</h4>
+                                        <h4>บริหารงานบุคคล</h4>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div style="width: 100%; border-bottom: 1px solid grey"></div>
 
-                        <div class="deputy-director">
+                    </main>
+                </section>
+                <section id="panel-2">
+                    <main>
+                        <h1>ข้อมูลครู/บุคลากร</h1>
+                        <div class="teacher-box">
+                            <div class="teacher">
+                                <div class="category">
+                                    <h1>หมวดหมู่ภาษาไทย</h1>
+                                </div>
+                                <div class="box-list-teacher">
+                                    <div class="list-teacher">
+                                        <div class="avatar">
+                                            <img src="https://avatarfiles.alphacoders.com/315/315434.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <h2>Minee Master</h2>
+                                            <h3>ครูชำนาญการพิเศษ</h3>
+                                            <h3>099-999-9999</h3>
+                                        </div>
+                                    </div>
+                                    <div class="list-teacher">
+                                        <div class="avatar">
+                                            <img src="https://avatarfiles.alphacoders.com/315/315434.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <h2>Minee Master</h2>
+                                            <h3>ครูชำนาญการพิเศษ</h3>
+                                            <h3>099-999-9999</h3>
+                                        </div>
+                                    </div>
+                                    <div class="list-teacher">
+                                        <div class="avatar">
+                                            <img src="https://avatarfiles.alphacoders.com/315/315434.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <h2>Minee Master</h2>
+                                            <h3>ครูชำนาญการพิเศษ</h3>
+                                            <h3>099-999-9999</h3>
+                                        </div>
+                                    </div>
+                                    <div class="list-teacher">
+                                        <div class="avatar">
+                                            <img src="https://avatarfiles.alphacoders.com/315/315434.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <h2>Minee Master</h2>
+                                            <h3>ครูชำนาญการพิเศษ</h3>
+                                            <h3>099-999-9999</h3>
+                                        </div>
+                                    </div>
+                                    <div class="list-teacher">
+                                        <div class="avatar">
+                                            <img src="https://avatarfiles.alphacoders.com/315/315434.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <h2>Minee Master</h2>
+                                            <h3>ครูชำนาญการพิเศษ</h3>
+                                            <h3>099-999-9999</h3>
+                                        </div>
+                                    </div>
+                                    <div class="list-teacher">
+                                        <div class="avatar">
+                                            <img src="https://avatarfiles.alphacoders.com/315/315434.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <h2>Minee Master</h2>
+                                            <h3>ครูชำนาญการพิเศษ</h3>
+                                            <h3>099-999-9999</h3>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <div class="list-deputy-director">
-                                <div class="avatar">
-                                    <img src="../assets/images/deputy_director1.jpg" alt="director">
+                                <hr>
+                                <div class="category">
+                                    <h1>หมวดหมู่ภาษาต่างประเทศ</h1>
                                 </div>
-                                <div class="info">
-                                    <h3>นายทองพูน โทสิงห์</h3>
-                                    <h4>ผู้อำนวยการ</h4>
-                                    <h4>บริหารงานทั่วไปและกิจการนักเรียน</h4>
-                                </div>
-                            </div>
-                            <div class="list-deputy-director">
-                                <div class="avatar">
-                                    <img src="../assets/images/deputy_director2.jpg" alt="director">
-                                </div>
-                                <div class="info">
-                                    <h3>นายประจวบ กำเนิดสิงห์</h3>
-                                    <h4>ผู้อำนวยการ</h4>
-                                    <h4>บริหารงานวิชาการ</h4>
-                                </div>
-                            </div>
-                            <div class="list-deputy-director">
-                                <div class="avatar">
-                                    <img src="../assets/images/deputy_director3.jpg" alt="director">
-                                </div>
-                                <div class="info">
-                                    <h3>นางฉวีวรรณ แสงทอง</h3>
-                                    <h4>ผู้อำนวยการ</h4>
-                                    <h4>บริหารแผนงานและงบประมาณ</h4>
-                                </div>
-                            </div>
-                            <div class="list-deputy-director">
-                                <div class="avatar">
-                                    <img src="../assets/images/deputy_director4.jpg" alt="director">
-                                </div>
-                                <div class="info">
-                                    <h3>นายศรัณยู เนตรมณี</h3>
-                                    <h4>ผู้อำนวยการ</h4>
-                                    <h4>บริหารงานบุคคล</h4>
+                                <div class="box-list-teacher">
+                                    <div class="list-teacher">
+                                        <div class="avatar">
+                                            <img src="https://avatarfiles.alphacoders.com/296/296277.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <h2>Minee Master</h2>
+                                            <h3>ครูชำนาญการพิเศษ</h3>
+                                            <h3>099-999-9999</h3>
+                                        </div>
+                                    </div>
+                                    <div class="list-teacher">
+                                        <div class="avatar">
+                                            <img src="https://avatarfiles.alphacoders.com/296/296277.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <h2>Minee Master</h2>
+                                            <h3>ครูชำนาญการพิเศษ</h3>
+                                            <h3>099-999-9999</h3>
+                                        </div>
+                                    </div>
+                                    <div class="list-teacher">
+                                        <div class="avatar">
+                                            <img src="https://avatarfiles.alphacoders.com/296/296277.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <h2>Minee Master</h2>
+                                            <h3>ครูชำนาญการพิเศษ</h3>
+                                            <h3>099-999-9999</h3>
+                                        </div>
+                                    </div>
+                                    <div class="list-teacher">
+                                        <div class="avatar">
+                                            <img src="https://avatarfiles.alphacoders.com/296/296277.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <h2>Minee Master</h2>
+                                            <h3>ครูชำนาญการพิเศษ</h3>
+                                            <h3>099-999-9999</h3>
+                                        </div>
+                                    </div>
+                                    <div class="list-teacher">
+                                        <div class="avatar">
+                                            <img src="https://avatarfiles.alphacoders.com/296/296277.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <h2>Minee Master</h2>
+                                            <h3>ครูชำนาญการพิเศษ</h3>
+                                            <h3>099-999-9999</h3>
+                                        </div>
+                                    </div>
+                                    <div class="list-teacher">
+                                        <div class="avatar">
+                                            <img src="https://avatarfiles.alphacoders.com/296/296277.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <h2>Minee Master</h2>
+                                            <h3>ครูชำนาญการพิเศษ</h3>
+                                            <h3>099-999-9999</h3>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                </main>
-            </section>
-            <section id="panel-2">
-                <main>
-                    <h1>ข้อมูลครู/บุคลากร</h1>
-                    <p>At this point you can probably get the picture for how we can conditionally display the tabbed
-                    </p>
-                </main>
-            </section>
-        </div>
-    </article>
+                    </main>
+                </section>
+            </div>
+        </article>
+    </div>
 </body>
 
 </html>
