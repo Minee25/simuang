@@ -566,7 +566,7 @@ html {
 .box-card {
     /* outline: 1px solid red; */
     width: 100%;
-    max-width: 1150px;
+    max-width: 1500px;
 
     display: flex;
     justify-content: center;
@@ -635,13 +635,13 @@ html {
 
 .title-video-embed-presentation {
     width: 100%;
-    max-width: 1150px;
+    max-width: 1500px;
     padding: 20px 0;
 }
 
 .box-embed-presentation {
     width: 100%;
-    max-width: 1150px;
+    max-width: 1500px;
 
     display: flex;
     /* align-items: center; */
