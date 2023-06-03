@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+.box-embed-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+
+}
+
+.embed-link {
+    width: 100%;
+    max-width: 1500px;
+}
+
+.title-embed-link {
+    display: flex;
+    justify-content: center;
+}
+
+/*  */
+
+.list-embed-link { 
+    /* height: 100%; */
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.embed-facebook { 
+    width: 100%;
+    max-width: 550px;
+}
+
+.iframe-fb {
+    height: 500px;
+    padding: 10px;
+
+    background: #fff;
+    border-top: 3px solid purple;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+/*  */
+
+.embed-youtube { 
+    width: 100%;
+    max-width: 550px;
+}
+
+.iframe-yt {
+    padding: 10px;
+    
+    background: #fff;
+    border-top: 3px solid purple;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+    /* height: 500px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.iframe-yt iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.highlight-iframe-yt {
+    background: #ccc;
+    height: 250px;
+    width: 350px;
+}
+
+.list-iframe-yt { 
+}
+
+.list-iframe-yt-1 {
+    margin-bottom: 10px;
+    background: #ccc;
+    height: 100px;
+    width: 150px;
+}

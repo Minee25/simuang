@@ -8,18 +8,18 @@ header {
     background: #343a4169;
     padding: 0 70px;
     height: 65px;
-    width: 100%;  
+    width: 100%;
     z-index: 1000;
-    
-    display: flex; 
+
+    display: flex;
     align-items: center;
     justify-content: center;
-    
+
     transition: 0.2s;
 }
 
 .navbar {
-    width: 100%;  
+    width: 100%;
     max-width: 1500px;
     display: flex;
     flex-direction: row;
@@ -90,16 +90,18 @@ header {
     border-right: 2px solid #fff;
 }
 
+
+
+.dropdown a i {
+    font-size: 14px;
+    margin-left: 4px;
+}
+
 .dropdown a {
     position: relative;
     display: inline-block;
     color: #fff;
     text-decoration: none;
-}
-
-.dropdown a i {
-    font-size: 14px;
-    margin-left: 4px;
 }
 
 .dropdown a::after {
