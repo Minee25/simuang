@@ -1,123 +1,185 @@
-// ==================== Slider Image ====================
-class CitiesSlider extends React.Component {
-  constructor(props) {
-    super(props);
+// The Slideshow class.
+class Slideshow {
+  constructor(el) {
 
-    this.IMAGE_PARTS = 4;
+      this.DOM = { el: el };
 
-    this.changeTO = null;
-    this.AUTOCHANGE_TIME = 4000;
+      this.config = {
+          slideshow: {
+              delay: 3000,
+              pagination: {
+                  duration: 3,
+              }
+          }
+      };
 
-    this.state = { activeSlide: -1, prevSlide: -1, sliderReady: false };
-  }
-
-  componentWillUnmount() {
-    window.clearTimeout(this.changeTO);
-  }
-
-  componentDidMount() {
-    this.runAutochangeTO();
-    setTimeout(() => {
-      this.setState({ activeSlide: 0, sliderReady: true });
-    }, 0);
-  }
-
-  runAutochangeTO() {
-    this.changeTO = setTimeout(() => {
-      this.changeSlides(1);
-      this.runAutochangeTO();
-    }, this.AUTOCHANGE_TIME);
-  }
-
-  changeSlides(change) {
-    window.clearTimeout(this.changeTO);
-    const { length } = this.props.slides;
-    const prevSlide = this.state.activeSlide;
-    let activeSlide = prevSlide + change;
-    if (activeSlide < 0) activeSlide = length - 1;
-    if (activeSlide >= length) activeSlide = 0;
-    this.setState({ activeSlide, prevSlide });
-  }
-
-  render() {
-    const { activeSlide, prevSlide, sliderReady } = this.state;
-    return /*#__PURE__*/(
-      React.createElement("div", { className: classNames('slider', { 's--ready': sliderReady }) }, /*#__PURE__*/
-        React.createElement("p", { className: "slider__top-heading" }, "ภาพกิจกรรม"), /*#__PURE__*/
-        React.createElement("div", { className: "slider__slides" },
-          this.props.slides.map((slide, index) => /*#__PURE__*/
-            React.createElement("div", {
-              className: classNames('slider__slide', { 's--active': activeSlide === index, 's--prev': prevSlide === index }),
-              key: slide.city
-            }, /*#__PURE__*/
-
-              React.createElement("div", { className: "slider__slide-content" }, /*#__PURE__*/
-                React.createElement("h3", { className: "slider__slide-subheading" }, slide.country || slide.city), /*#__PURE__*/
-                React.createElement("h2", { className: "slider__slide-heading" },
-                  slide.city.split('').map(l => /*#__PURE__*/React.createElement("span", null, l))), /*#__PURE__*/
-
-                // React.createElement("p", { className: "slider__slide-readmore" }, "read more")), /*#__PURE__*/
-                React.createElement("p", { className: "slider__slide-readmore" }, "")), /*#__PURE__*/
-
-              React.createElement("div", { className: "slider__slide-parts" },
-                [...Array(this.IMAGE_PARTS).fill()].map((x, i) => /*#__PURE__*/
-                  React.createElement("div", { className: "slider__slide-part", key: i }, /*#__PURE__*/
-                    React.createElement("div", { className: "slider__slide-part-inner", style: { backgroundImage: `url(${slide.img})` } }))))))), /*#__PURE__*/
-        React.createElement("div", { className: "slider__control", onClick: () => this.changeSlides(-1) }), /*#__PURE__*/
-        React.createElement("div", { className: "slider__control slider__control--right", onClick: () => this.changeSlides(1) })));
-
+      // Set the slideshow
+      this.init();
 
   }
+  init() {
+
+      var self = this;
+
+      // Charmed title
+      this.DOM.slideTitle = this.DOM.el.querySelectorAll('.slide-title');
+      this.DOM.slideTitle.forEach((slideTitle) => {
+          charming(slideTitle);
+      });
+
+      // Set the slider
+      this.slideshow = new Swiper(this.DOM.el, {
+
+          loop: true,
+          autoplay: {
+              delay: this.config.slideshow.delay,
+              disableOnInteraction: false,
+          },
+          speed: 500,
+          preloadImages: true,
+          updateOnImagesReady: true,
+
+          // lazy: true,
+          // preloadImages: false,
+
+          pagination: {
+              el: '.slideshow-pagination',
+              clickable: true,
+              bulletClass: 'slideshow-pagination-item',
+              bulletActiveClass: 'active',
+              clickableClass: 'slideshow-pagination-clickable',
+              modifierClass: 'slideshow-pagination-',
+              renderBullet: function (index, className) {
+
+                  var slideIndex = index,
+                      number = (index <= 8) ? '0' + (slideIndex + 1) : (slideIndex + 1);
+
+                  var paginationItem = '<span class="slideshow-pagination-item">';
+                  paginationItem += '<span class="pagination-number">' + number + '</span>';
+                  paginationItem = (index <= 8) ? paginationItem + '<span class="pagination-separator"><span class="pagination-separator-loader"></span></span>' : paginationItem;
+                  paginationItem += '</span>';
+
+                  return paginationItem;
+
+              },
+          },
+
+          // Navigation arrows
+          navigation: {
+              nextEl: '.slideshow-navigation-button.next',
+              prevEl: '.slideshow-navigation-button.prev',
+          },
+
+          // And if we need scrollbar
+          scrollbar: {
+              el: '.swiper-scrollbar',
+          },
+
+          on: {
+              init: function () {
+                  self.animate('next');
+              },
+          }
+
+      });
+
+      // Init/Bind events.
+      this.initEvents();
+
+  }
+  initEvents() {
+
+      this.slideshow.on('paginationUpdate', (swiper, paginationEl) => this.animatePagination(swiper, paginationEl));
+      //this.slideshow.on('paginationRender', (swiper, paginationEl) => this.animatePagination());
+
+      this.slideshow.on('slideNextTransitionStart', () => this.animate('next'));
+
+      this.slideshow.on('slidePrevTransitionStart', () => this.animate('prev'));
+
+  }
+  animate(direction = 'next') {
+
+      // Get the active slide
+      this.DOM.activeSlide = this.DOM.el.querySelector('.swiper-slide-active'),
+          this.DOM.activeSlideImg = this.DOM.activeSlide.querySelector('.slide-image'),
+          this.DOM.activeSlideTitle = this.DOM.activeSlide.querySelector('.slide-title'),
+          this.DOM.activeSlideTitleLetters = this.DOM.activeSlideTitle.querySelectorAll('span');
+
+      // Reverse if prev  
+      this.DOM.activeSlideTitleLetters = direction === "next" ? this.DOM.activeSlideTitleLetters : [].slice.call(this.DOM.activeSlideTitleLetters).reverse();
+
+      // Get old slide
+      this.DOM.oldSlide = direction === "next" ? this.DOM.el.querySelector('.swiper-slide-prev') : this.DOM.el.querySelector('.swiper-slide-next');
+      if (this.DOM.oldSlide) {
+          // Get parts
+          this.DOM.oldSlideTitle = this.DOM.oldSlide.querySelector('.slide-title'),
+              this.DOM.oldSlideTitleLetters = this.DOM.oldSlideTitle.querySelectorAll('span');
+          // Animate
+          this.DOM.oldSlideTitleLetters.forEach((letter, pos) => {
+              TweenMax.to(letter, .3, {
+                  ease: Quart.easeIn,
+                  delay: (this.DOM.oldSlideTitleLetters.length - pos - 1) * .04,
+                  y: '50%',
+                  opacity: 0
+              });
+          });
+      }
+
+      // Animate title
+      this.DOM.activeSlideTitleLetters.forEach((letter, pos) => {
+          TweenMax.to(letter, .6, {
+              ease: Back.easeOut,
+              delay: pos * .05,
+              startAt: { y: '50%', opacity: 0 },
+              y: '0%',
+              opacity: 1
+          });
+      });
+
+      // Animate background
+      TweenMax.to(this.DOM.activeSlideImg, 1.5, {
+          ease: Expo.easeOut,
+          startAt: { x: direction === 'next' ? 200 : -200 },
+          x: 0,
+      });
+
+      //this.animatePagination()
+
+  }
+  animatePagination(swiper, paginationEl) {
+
+      // Animate pagination
+      this.DOM.paginationItemsLoader = paginationEl.querySelectorAll('.pagination-separator-loader');
+      this.DOM.activePaginationItem = paginationEl.querySelector('.slideshow-pagination-item.active');
+      this.DOM.activePaginationItemLoader = this.DOM.activePaginationItem.querySelector('.pagination-separator-loader');
+
+      console.log(swiper.pagination);
+      // console.log(swiper.activeIndex);
+
+      // Reset and animate
+      TweenMax.set(this.DOM.paginationItemsLoader, { scaleX: 0 });
+      TweenMax.to(this.DOM.activePaginationItemLoader, this.config.slideshow.pagination.duration, {
+          startAt: { scaleX: 0 },
+          scaleX: 1,
+      });
+
+
+  }
+
 }
 
-// Image src 
-
-const slides = [
-  {
-    city: '2565',
-    country: 'การประชุมผู้ครองนักเรียน ประจำปีการศึกษา',
-    img: 'https://sv1.picz.in.th/images/2023/05/23/FqfthP.jpg'
-  },
-
-  {
-    city: '',
-    img: 'https://sv1.picz.in.th/images/2023/05/23/Fqf1Ve.jpg'
-
-  },
-
-  {
-    city: ' ',
-    country: '',
-    img: 'https://sv1.picz.in.th/images/2023/05/23/FqfcRk.jpg'
-  },
-
-  {
-    city: '  ',
-    country: '',
-    img: 'https://sv1.picz.in.th/images/2023/05/23/Fqfguv.jpg'
-  },
-
-  {
-    city: '   ',
-    country: '',
-    img: 'https://sv1.picz.in.th/images/2023/05/23/FqfQDV.jpg'
-  },
-];
-
-ReactDOM.render( /*#__PURE__*/React.createElement(CitiesSlider, { slides: slides }), document.querySelector('#app'));
+const slideshow = new Slideshow(document.querySelector('.slideshow'));
 
 
 
-// ==================== Navigation Bar ====================
 
-window.onscroll = function () { scrollFunction() };
+// Popup Embed
+function openPopup(videoId) {
+  document.getElementById("popupContainer").style.display = "block";
+  document.getElementById("videoFrame").src = "https://www.youtube.com/embed/" + videoId;
+}
 
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    // document.getElementById("navbar").style.paddingTop = "0px";
-    document.getElementById("navbar").style.background = "#343A41";
-  } else {
-    // document.getElementById("navbar").style.paddingTop = "30px";
-    document.getElementById("navbar").style.background = "#343a414b";
-  }
+function closePopup() {
+  document.getElementById("popupContainer").style.display = "none";
+  document.getElementById("videoFrame").src = "";
 }
