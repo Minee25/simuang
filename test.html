@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        /* Style the "Go to Top" button */
+        #goToTopBtn {
+            display: none;
+            /* Hide the button by default */
+            position: fixed;
+            /* Fixed position on the screen */
+            bottom: 20px;
+            /* Position it 20 pixels from the bottom */
+            right: 30px;
+            /* Position it 30 pixels from the right */
+            z-index: 99;
+            /* Set a higher z-index to make it appear above other elements */
+            border: none;
+            /* Remove border */
+            outline: none;
+            /* Remove outline */
+            background-color: #555;
+            /* Set background color */
+            color: white;
+            /* Set text color */
+            cursor: pointer;
+            /* Set cursor style to pointer */
+            padding: 15px;
+            /* Add some padding */
+            border-radius: 4px;
+            /* Add rounded corners */
+        }
+
+        /* Show the button when the user scrolls 20px from the top */
+        #goToTopBtn.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Your webpage content here -->
+
+    <button onclick="goToTop()" id="goToTopBtn" title="Go to Top">Top</button>
+
+    <script>
+        // When the user scrolls down 20px from the top, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("goToTopBtn").classList.add("show");
+            } else {
+                document.getElementById("goToTopBtn").classList.remove("show");
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function goToTop() {
+            document.body.scrollTop = 0; /* For Safari */
+            document.documentElement.scrollTop = 0; /* For Chrome, Firefox, IE and Opera */
+        }
+    </script>
+</body>
+</html>
