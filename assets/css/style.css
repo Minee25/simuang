@@ -17,23 +17,27 @@ html {
     width: 100%;
 }
 
- /* Style the "Go to Top" button */
- #goToTopBtn {
-    display: none; 
-    position: fixed; 
+/* Popup */ 
+
+/* Style the "Go to Top" button */
+#goToTopBtn {
+    display: none;
+    position: fixed;
     height: 60px;
     width: 60px;
-    bottom: 20px; 
-    right: 30px; 
-    z-index: 99;  
-    border: none;
-    outline: none;  
-    background-color: yellow; 
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: 1px solid gray;
+    outline: none;
+    /* background-color: yellow; */
+    /* background: transparent; */
+    background: #ffffff0e;
     font-size: 16px;
-    color: #000; 
-    cursor: pointer; 
-    padding: 15px; 
-    border-radius: 50%; 
+    color: #000;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
 }
 
 /* Show the button when the user scrolls 20px from the top */
@@ -68,15 +72,42 @@ header {
 }
 
 .title .logo {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.title .logo img {
     height: 90px;
     width: 90px;
 }
+
+.title .logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.star:nth-child(2) {
+    top: 50px;
+    left: 100px;
+    animation-duration: 3s;
+}
+
+.star:nth-child(3) {
+    top: 120px;
+    left: 50px;
+    animation-duration: 1.5s;
+}
+
 
 .title .text {
     margin-left: 20px;
@@ -86,6 +117,9 @@ header {
 
 .title .text a {
     text-decoration: none;
+    text-shadow: 0 0 5px #00000025;
+    /* -webkit-text-stroke: 0.1px black;
+    text-stroke: 0.1px black; */
 }
 
 .title .text .title-text {
@@ -98,6 +132,27 @@ header {
     margin-top: -7px;
     font-size: 22px;
     color: purple;
+}
+
+
+.textani {
+    text-align: center;
+    color: #f35626;
+    background-image: -webkit-linear-gradient(0deg, #ff006a, #ff00ff);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
 }
 
 /*  */
@@ -230,7 +285,7 @@ header {
 /* Slide */
 section {
     width: 100%;
-    height: 60vh;
+    height: 50vh;
 }
 
 .swiper-container {
@@ -655,6 +710,7 @@ section {
     overflow: hidden;
     transition: 0.2s;
 }
+
 .list-wrap-card:hover {
     transform: scale(1.03);
 }
@@ -670,12 +726,12 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-} 
+}
 
 .wrap-card-img img {
     height: 100%;
     width: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 
@@ -707,10 +763,12 @@ section {
     color: #fff;
 }
 
+
 .box-copyright {
     padding-bottom: 30px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .box-copyright-list {
@@ -721,4 +779,42 @@ section {
 .box-copyright-list h4 {
     color: yellow;
 }
- 
+
+.link-copyright-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-copyright-link a {
+    color: #2e89ff;
+}
+
+.link-copyright-link i {
+    color: #4a99ff;
+}
+
+.text-copyright p {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .line-copyright {
+        display: none;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-copyright {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .box-copyright-list {
+        margin-bottom: 20px;
+    }
+}
