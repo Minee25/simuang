@@ -1,0 +1,80 @@
+/* ==================== Footer ==================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+* { 
+    /* outline: 1px solid red; */
+}
+.footer {
+    font-family: 'Kanit', Arial, sans-serif;
+    bottom: 0;
+    margin-top: 50px;
+    padding: 30px;
+    width: 100%;
+    background: #3d3d3d;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+.box-copyright {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box-copyright-list {
+    margin: 0 30px;
+    /* margin-bottom: 20px; */
+}
+
+.box-copyright-list h4 {
+    color: yellow;
+}
+
+.link-copyright-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-copyright-link a {
+    color: #2e89ff;
+}
+
+.link-copyright-link i {
+    color: #4a99ff;
+}
+
+.text-copyright p {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .line-copyright {
+        display: none;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-copyright {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .box-copyright-list {
+        margin-bottom: 20px;
+    }
+}
