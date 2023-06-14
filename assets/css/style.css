@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +18,7 @@ html {
     width: 100%;
 }
 
-/* Popup */ 
+/* Popup */
 
 /* Style the "Go to Top" button */
 #goToTopBtn {
@@ -473,12 +474,22 @@ section {
     margin: 15px;
     height: 200px;
     width: 150px;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: 0.2s;
 }
 
-.list-wrap-card:hover {
+.list-wrap-card:hover .wrap-card-img {
     transform: scale(1.03);
+}
+
+.list-wrap-card:hover .wrap-card-caption h1,
+.list-wrap-card:hover .wrap-card-caption h2,
+.list-wrap-card:hover .wrap-card-caption h3,
+.list-wrap-card:hover .wrap-card-caption h4,
+.list-wrap-card:hover .wrap-card-caption h5,
+.list-wrap-card:hover .wrap-card-caption h6,
+.list-wrap-card:hover .wrap-card-caption p {
+    color: rgb(255, 187, 0);
 }
 
 .list-wrap-card a {
@@ -492,6 +503,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    transition: 0.2s;
 }
 
 .wrap-card-img img {
@@ -512,4 +525,3 @@ section {
 .wrap-card-caption h3 {
     color: #000;
 }
-

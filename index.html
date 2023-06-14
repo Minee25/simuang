@@ -45,18 +45,27 @@
                             <a class="title-subtitle textani" href="#">Simuang Wittayakarn School</a>
                         </div>
                     </div>
+                    <div onclick="toggleDropdown()" class="dropdown-responsive" id="dropdown-responsive">
+                        <div class="icon-dropdown-responsive">
+                            <i class="fa fa-bars openIcon" id="openIcon"></i>
+                            <i class="fa fa-xmark closeIcon" id="closeIcon" style="display: none;"></i>
+                        </div>
+                    </div>
                 </div>
             </header>
-            <div class="link-box">
+
+            <div class="link-box" id="link-box">
                 <div class="link">
                     <ul>
                         <li><a href="#">หน้าแรก</a></li>
                         <div class="line" style="border: 1px solid #fff"></div>
-                        <li class="dropdown"><a href="#">เกี่ยวกับโรงเรียน <i class="fa  fa-chevron-down"></i></a>
+                        <li class="dropdown">
+                            <a href="#">เกี่ยวกับโรงเรียน <i class="fa  fa-chevron-down"></i></a>
                             <div class="dropdown-content">
                                 <div class="list-dropdown-content">
                                     <a href="pages/school-history.html">ประวัติโรงเรียน</a>
-                                    <a href="https://data.bopp-obec.info/emis/schooldata-view.php?School_ID=1034711106&Area_CODE=0">ข้อมูลพื้นฐาน</a>
+                                    <a
+                                        href="https://data.bopp-obec.info/emis/schooldata-view.php?School_ID=1034711106&Area_CODE=0">ข้อมูลพื้นฐาน</a>
                                 </div>
                                 <div class="line-dropdown-content"></div>
                                 <div class="list-dropdown-content">
@@ -76,25 +85,28 @@
                             <div class="dropdown-content">
                                 <div class="list-dropdown-content">
                                     <a href="pages/curriculum.html">หลักสูตรโรงเรียน</a>
-                                    <a href="https://sites.google.com/simuang.ac.th/academic/curriculum/onelineclassroom" target="_blank">เรียนออนไลน์</a>
+                                    <a href="https://sites.google.com/simuang.ac.th/academic/curriculum/onelineclassroom"
+                                        target="_blank">เรียนออนไลน์</a>
                                     <a href="http://simuang.vlcloud.net/">ห้องสมุดดิจิทัล</a>
                                 </div>
                                 <div class="line-dropdown-content"></div>
                                 <div class="list-dropdown-content">
                                     <a href="pages/student-guide.html">คู่มือนักเรียน</a>
-                                    <a href="https://sites.google.com/simuang.ac.th/academic/home" target="_blank">เว็บไซต์งานวิชาการ</a>
+                                    <a href="https://sites.google.com/simuang.ac.th/academic/home"
+                                        target="_blank">เว็บไซต์งานวิชาการ</a>
                                 </div>
                                 <div class="line-dropdown-content"></div>
                                 <div class="list-dropdown-content">
                                     <a href="http://www.smss-school.org/rally/">ระบบกิจกรรมชุมนุม</a>
-                                    <a href="https://sites.google.com/simuang.ac.th/dulae-sk">ระบบดูแลช่วยเหลือนักเรียน</a>
+                                    <a
+                                        href="https://sites.google.com/simuang.ac.th/dulae-sk">ระบบดูแลช่วยเหลือนักเรียน</a>
                                 </div>
                             </div>
                         </li>
                         <div class="line" style="border: 1px solid #fff"></div>
                         <li class="dropdown"><a href="#">กลุ่มงาน <i class="fa  fa-chevron-down"></i></a>
                             <div class="dropdown-content">
-                                <div class="list-dropdown-content"> 
+                                <div class="list-dropdown-content">
                                     <a href="https://sites.google.com/simuang.ac.th/planing-sk">กลุ่มงานแผนงานทั่วไป</a>
                                     <a href="#">กลุ่มงานงบประมาณ</a>
                                     <a href="#">กลุ่มงานบุคลากร</a>
@@ -133,8 +145,11 @@
                                 <div class="line-dropdown-content"></div>
                                 <div class="list-dropdown-content">
                                     <a href="#">จองระบบงานโสตทัศนศึกษา</a>
-                                    <a href="http://www.smss-school.org/simuang/">ระบบสนับสนุนการบริหารจัดการสถานศึกษา</a>
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScjvA5gL06dbfziXcNFnaXnPB1p_rcFmDCL-os6ZC-5bU6qMA/closedform">แบบสำรวจซ่อม (อาคารสถานที่)</a>
+                                    <a
+                                        href="http://www.smss-school.org/simuang/">ระบบสนับสนุนการบริหารจัดการสถานศึกษา</a>
+                                    <a
+                                        href="https://docs.google.com/forms/d/e/1FAIpQLScjvA5gL06dbfziXcNFnaXnPB1p_rcFmDCL-os6ZC-5bU6qMA/closedform">แบบสำรวจซ่อม
+                                        (อาคารสถานที่)</a>
                                 </div>
                                 <div class="line-dropdown-content"></div>
                                 <div class="list-dropdown-content">
@@ -353,7 +368,7 @@
                             <h1>
                                 <a style="color:#1877f2; cursor: pointer;" target="_blank"
                                     href="https://www.facebook.com/SrimuangSK/">
-                                    Facebook
+                                    แฟนเพจ
                                 </a>
                             </h1>
                             <div class="iframe-fb">
@@ -371,7 +386,7 @@
                             <h1>
                                 <a style="color: #ff00ff;" target="_blank"
                                     href="https://www.youtube.com/channel/UCO8yg6y6PRtI_6UA0UDv4xQ">
-                                    Youtube
+                                    วีดิทัศน์
                                 </a>
                             </h1>
                             <div class="iframe-yt">
@@ -429,7 +444,7 @@
             </div>
 
             <!-- ==================== Wrap Card ==================== -->
-            <!-- <div class="box-wrap-card">
+            <div class="box-wrap-card">
                 <div class="wrap-card">
 
                     <div class="list-wrap-card">
@@ -494,7 +509,7 @@
                     </div>
 
                 </div>
-            </div> -->
+            </div>
 
             <!-- ==================== Footer ==================== -->
 
@@ -505,7 +520,7 @@
                             <h4>ติดต่อ</h4>
                             <p><i class="fa fa-phone"></i> โทร: 045-251-623</p>
                             <p><i class="fa fa-envelope"></i> อีเมล: mailsk@simuang.ac.th</p>
-                            <a style="color: #2e89ff;" href="#">www.simuang.ac.th</a>
+                            <!-- <a style="color: #2e89ff;" href="#">www.simuang.ac.th</a> -->
                         </div>
                         <div class="line-copyright" style="border-right: 2px solid #fff;"></div>
                         <div class="box-copyright-list">
@@ -543,6 +558,7 @@
     </div>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/navbar.js"></script>
 </body>
 
 </html>

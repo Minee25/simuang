@@ -11,7 +11,7 @@ header {
     justify-content: center;
     align-items: center;
     z-index: 1200;
-    
+
     font-family: 'Kanit', Arial, sans-serif;
 }
 
@@ -116,11 +116,12 @@ header {
 /*  */
 .link-box {
     background: #3d3d3d;
-    height: 50px;
+    /* height: 50px; */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2px 0;
 }
 
 .link-box .link {
@@ -219,7 +220,6 @@ header {
 }
 
 .dropdown:hover .dropdown-content {
-
     visibility: visible;
     opacity: 1;
     animation-name: dropdown-content-slide;
@@ -237,3 +237,105 @@ header {
     }
 
 }
+
+
+/* ==================== Responsive ==================== */
+
+
+.dropdown-responsive {
+    display: none;
+    /* width: 100%; */
+    /* padding: 50px; */
+    width: 70px;
+    height: 70px;
+    background: #49494985;
+    border-radius: 7px;
+    position: relative;
+}
+
+
+
+.icon-dropdown-responsive {
+    color: #fff;
+    padding: 0 15px;
+    font-size: 44px;
+}
+
+.icon-dropdown-responsive {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 768 */
+@media screen and (max-width: 800px) {
+    .box-header {
+        border-bottom: 10px solid #3d3d3d;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .link-box {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .link-box {
+        z-index: 10000;
+        position: absolute;
+        padding: 30px 0;
+        overflow: auto;
+    }
+
+
+    .dropdown-responsive {
+        display: block;
+    }
+
+    .link-box .link ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dropdown-content {
+        position: static;
+        /* height: 10px; */
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        /* border-bottom: 5px solid #000; */
+        background: transparent
+    }
+
+    .dropdown {
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link-box {
+        height: 50%;
+    }
+ 
+     .dropdown {
+        width: 100%;
+        display: flex;
+        align-items: end; 
+    } 
+ 
+}
+
+@media screen and (max-width: 600px) {
+    .navbar .title .text {
+        display: none;
+    }
+}
+ 
