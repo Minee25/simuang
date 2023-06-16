@@ -120,16 +120,13 @@ class Slideshow {
 
     }
     animate(direction = 'next') {
-
         // Get the active slide
         this.DOM.activeSlide = this.DOM.el.querySelector('.swiper-slide-active'),
             this.DOM.activeSlideImg = this.DOM.activeSlide.querySelector('.slide-image'),
             this.DOM.activeSlideTitle = this.DOM.activeSlide.querySelector('.slide-title'),
             this.DOM.activeSlideTitleLetters = this.DOM.activeSlideTitle.querySelectorAll('span');
-
         // Reverse if prev  
         this.DOM.activeSlideTitleLetters = direction === "next" ? this.DOM.activeSlideTitleLetters : [].slice.call(this.DOM.activeSlideTitleLetters).reverse();
-
         // Get old slide
         this.DOM.oldSlide = direction === "next" ? this.DOM.el.querySelector('.swiper-slide-prev') : this.DOM.el.querySelector('.swiper-slide-next');
         if (this.DOM.oldSlide) {

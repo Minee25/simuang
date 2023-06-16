@@ -453,15 +453,12 @@ section {
 /* ==================== Wrap Card ==================== */
 
 .box-wrap-card {
-    /* padding-bottom: 100px; */
-    /* margin-top: 100px; */
     background: #f9f9f9;
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 50px 50px;
 }
-
 .wrap-card {
     width: 100%;
     max-width: 1500px;
@@ -469,19 +466,15 @@ section {
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .list-wrap-card {
     margin: 15px;
     height: 200px;
     width: 150px;
-    /* overflow: hidden; */
     transition: 0.2s;
 }
-
 .list-wrap-card:hover .wrap-card-img {
     transform: scale(1.03);
 }
-
 .list-wrap-card:hover .wrap-card-caption h1,
 .list-wrap-card:hover .wrap-card-caption h2,
 .list-wrap-card:hover .wrap-card-caption h3,
@@ -491,7 +484,6 @@ section {
 .list-wrap-card:hover .wrap-card-caption p {
     color: rgb(255, 187, 0);
 }
-
 .list-wrap-card a {
     text-decoration: none;
 }
