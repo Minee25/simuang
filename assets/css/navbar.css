@@ -316,7 +316,7 @@ header {
     .list-dropdown-content {
         /* position: static; */
         
-        outline: 1px solid red;
+        /* outline: 1px solid red; */
     }
 
     .dropdown {
