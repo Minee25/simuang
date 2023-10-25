@@ -29,6 +29,10 @@
 
 .box-copyright-list {
     margin: 0 30px;
+} 
+
+.box-copyright-list a {
+    color: #2e89ff;
 }
 
 .box-copyright-list h4 {
