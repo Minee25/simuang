@@ -22,153 +22,177 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css'>
 
-    <!-- /Slide Image -->
-
 </head>
 
 <body>
 
     <div class="container">
 
-
         <button onclick="goToTop()" id="goToTopBtn" title="Go to Top"><i class="fa-solid fa-arrow-up"></i></button>
-        <div class="box-header">
-            <header>
-                <div class="navbar">
-
-                    <div class="title">
-                        <div class="logo">
-                            <img src="assets/images/logo-sk.png" alt="">
-                        </div>
-                        <div class="text">
-                            <a class="title-text textani" href="#">โรงเรียนศรีเมืองวิทยาคาร</a>
-                            <a class="title-subtitle textani" href="#">Simuang Wittayakarn School</a>
-                        </div>
+        <div class="navbar">
+            <div class="box-navbar">
+                <div class="nav-title">
+                    <div class="logo">
+                        <img src="assets/images/logo-sk.png" alt="">
                     </div>
-                    <div onclick="toggleDropdown()" class="dropdown-responsive" id="dropdown-responsive">
-                        <div class="icon-dropdown-responsive">
-                            <i class="fa fa-bars openIcon" id="openIcon"></i>
-                            <i class="fa fa-xmark closeIcon" id="closeIcon" style="display: none;"></i>
-                        </div>
+                    <div class="text">
+                        <a class="title-text textani" href="#">โรงเรียนศรีเมืองวิทยาคาร</a>
+                        <a class="title-subtitle textani" href="#">Simuang Wittayakarn School</a>
                     </div>
                 </div>
-            </header>
+                <div class="toggle-res" id="toggle-button">
+                    <div class="icon">
+                        <i id="icon-toggle-button" class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
 
-            <div class="link-box" id="link-box">
-                <div class="link">
-                    <ul>
-                        <li><a href="#">หน้าแรก</a></li>
-                        <div class="line" style="border: 1px solid #fff"></div>
-                        <li class="dropdown">
-                            <a href="#">เกี่ยวกับโรงเรียน <i class="fa  fa-chevron-down"></i></a>
+            <!--  -->
+
+            <div class="box-link-bg" id="box-link-hidden">
+                <div class="box-link">
+                    <div class="nav-link">
+                        <div class="link-main">
+                            <a class="text-link-main" href="index.html">หน้าแรก</a>
+                            <i style="display: none;" class="icon-link-main fas fa-chevron-down"></i>
+                        </div>
+                        <div style="display: none;" class="link-dropdown">
+                            <div class="dropdown-content">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line-link"></div>
+                    
+                    <div class="nav-link">
+                        <div class="link-main">
+                            <a class="text-link-main" href="#">เกี่ยวกับโรงเรียน</a>
+                            <i class="icon-link-main fas fa-chevron-down"></i>
+                        </div>
+                        <div class="link-dropdown">
                             <div class="dropdown-content">
                                 <div class="list-dropdown-content">
                                     <a href="pages/school-history.html">ประวัติโรงเรียน</a>
-                                    <a
-                                        href="https://data.bopp-obec.info/emis/schooldata-view.php?School_ID=1034711106&Area_CODE=0">ข้อมูลพื้นฐาน</a>
+                                    <a href="https://data.bopp-obec.info/emis/schooldata-view.php?School_ID=1034711106&Area_CODE=0" target="_blank">ข้อมูลพื้นฐาน</a>
                                 </div>
-                                <div class="line-dropdown-content"></div>
+                                <div class="line-dropdown"></div>
                                 <div class="list-dropdown-content">
                                     <a href="pages/school-philosophy.html">ปรัชญา ตรา สีประจำโรงเรียน</a>
                                     <a href="pages/identity.html">เอกลักษณ์ อัตลักษณ์</a>
                                     <a href="pages/objectives.html">วิสัยทัศน์/พันธกิจ/เป้าประสงค์</a>
                                     <a href="pages/strategy.html">กลยุทธ์</a>
                                 </div>
-                                <div class="line-dropdown-content"></div>
+                                <div class="line-dropdown"></div>
                                 <div class="list-dropdown-content">
                                     <a href="pages/map.html">แผนที่/การเดินทาง</a>
                                 </div>
                             </div>
-                        </li>
-                        <div class="line" style="border: 1px solid #fff"></div>
-                        <li class="dropdown"><a href="#">หลักสูตรการสอน <i class="fa  fa-chevron-down"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="line-link"></div>
+
+                    <div class="nav-link">
+                        <div class="link-main">
+                            <a class="text-link-main" href="#">หลักสูตรการสอน </a>
+                            <i class="icon-link-main fas fa-chevron-down"></i>
+                        </div>
+                        <div class="link-dropdown">
                             <div class="dropdown-content">
                                 <div class="list-dropdown-content">
                                     <a href="pages/curriculum.html">หลักสูตรโรงเรียน</a>
-                                    <a href="https://sites.google.com/simuang.ac.th/academic/curriculum/onelineclassroom"
-                                        target="_blank">เรียนออนไลน์</a>
-                                    <a href="http://simuang.vlcloud.net/">ห้องสมุดดิจิทัล</a>
+                                    <a href="https://sites.google.com/simuang.ac.th/academic/curriculum/onelineclassroom" target="_blank">เรียนออนไลน์</a>
+                                    <a href="http://simuang.vlcloud.net/" target="_blank">ห้องสมุดดิจิทัล</a>
                                 </div>
-                                <div class="line-dropdown-content"></div>
+                                <div class="line-dropdown"></div>
                                 <div class="list-dropdown-content">
                                     <a href="pages/student-guide.html">คู่มือนักเรียน</a>
-                                    <a href="https://sites.google.com/simuang.ac.th/academic/home"
-                                        target="_blank">เว็บไซต์งานวิชาการ</a>
+                                    <a href="https://sites.google.com/simuang.ac.th/academic/home" target="_blank">เว็บไซต์งานวิชาการ</a> 
                                 </div>
-                                <div class="line-dropdown-content"></div>
+                                <div class="line-dropdown"></div>
                                 <div class="list-dropdown-content">
-                                    <a href="http://www.smss-school.org/rally/">ระบบกิจกรรมชุมนุม</a>
-                                    <a
-                                        href="https://sites.google.com/simuang.ac.th/dulae-sk">ระบบดูแลช่วยเหลือนักเรียน</a>
+                                    <a href="http://www.smss-school.org/rally/" target="_blank">ระบบกิจกรรมชุมนุม</a>
+                                    <a href="https://sites.google.com/simuang.ac.th/dulae-sk" target="_blank">ระบบดูแลช่วยเหลือนักเรียน</a>
                                 </div>
                             </div>
-                        </li>
-                        <div class="line" style="border: 1px solid #fff"></div>
-                        <li class="dropdown"><a href="#">กลุ่มงาน <i class="fa  fa-chevron-down"></i></a>
-                            <div class="dropdown-content">
-                                <div class="list-dropdown-content">
-                                    <a href="https://sites.google.com/simuang.ac.th/planing-sk">กลุ่มงานแผนงานทั่วไป</a>
-                                    <a href="#">กลุ่มงานงบประมาณ</a>
-                                    <a href="#">กลุ่มงานบุคลากร</a>
-                                    <a href="#">กลุ่มงานวิชาการ</a>
-                                </div>
-                            </div>
-                        </li>
-                        <div class="line" style="border: 1px solid #fff"></div>
-                        <li class="dropdown"><a href="#">บุคลากร <i class="fa  fa-chevron-down"></i></a>
-                            <div class="dropdown-content">
-                                <div class="list-dropdown-content">
-                                    <a href="pages/personnel.html">คณะผู้บริหาร</a>
-                                </div>
-                                <div class="line-dropdown-content"></div>
-                                <div class="list-dropdown-content">
-                                    <a href="#">กลุ่มสาระการเรียนรู้ภาษาไทย</a>
-                                    <a href="#">กลุ่มสาระการเรียนรู้คณิตศาสตร์</a>
-                                    <a href="#">กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี</a>
-                                    <a href="#">กลุ่มสาระการเรียนรู้สังคมศึกษา ศาสนาและวัฒนธรรม</a>
-                                    <a href="#">กลุ่มสาระการเรียนรู้สุขศึกษาและพลศึกษา</a>
-                                    <a href="#">กลุ่มสาระการเรียนรู้การงานอาชีพ</a>
-                                    <a href="#">กลุ่มสาระการเรียนรู้สาระภาษาต่างประเทศ</a>
-                                    <a href="#">บุคลากรและเจ้าหน้าที่</a>
-                                </div>
-                            </div>
-                        </li>
+                        </div>
+                    </div>
 
-                        <div class="line" style="border: 1px solid #fff"></div>
-                        <li class="dropdown"><a href="#">ธุรการ <i class="fa  fa-chevron-down"></i></a>
+                    <div class="line-link"></div>
+
+                    <div class="nav-link">
+                        <div class="link-main">
+                            <a class="text-link-main" href="#">กลุ่มงาน</a>
+                            <i class="icon-link-main fas fa-chevron-down"></i>
+                        </div>
+                        <div class="link-dropdown">
                             <div class="dropdown-content">
                                 <div class="list-dropdown-content">
-                                    <a href="#">ทะเบียนหนังสือนำส่ง ปี 66</a>
-                                    <a href="#">ทะเบียนบันทึกข้อความ ปี 66</a>
-                                    <a href="#">ทะเบียนออกเลขคำสั่ง ปี 66</a>
-                                </div>
-                                <div class="line-dropdown-content"></div>
-                                <div class="list-dropdown-content">
-                                    <a href="#">จองระบบงานโสตทัศนศึกษา</a>
-                                    <a
-                                        href="http://www.smss-school.org/simuang/">ระบบสนับสนุนการบริหารจัดการสถานศึกษา</a>
-                                    <a
-                                        href="https://docs.google.com/forms/d/e/1FAIpQLScjvA5gL06dbfziXcNFnaXnPB1p_rcFmDCL-os6ZC-5bU6qMA/closedform">แบบสำรวจซ่อม
-                                        (อาคารสถานที่)</a>
-                                </div>
-                                <div class="line-dropdown-content"></div>
-                                <div class="list-dropdown-content">
-                                    <a href="#">ทะเบียนหนังสือนำส่ง ปี 65</a>
-                                    <a href="#">ทะเบียนเลขที่เกียรติบัตร ปี 65</a>
-                                    <a href="#">ทะเบียนบันทึกข้อความ ปี 65</a>
-                                    <a href="#">ทะเบียนคำสั่ง ปี 65</a>
-                                </div>
-                                <div class="line-dropdown-content"></div>
-                                <div class="list-dropdown-content">
-                                    <a href="#">โปรแกรมจัดซื้อจัดจ้าง</a>
-                                    <a href="#">ทะเบียนคุมการจัดจ้าง</a>
-                                    <a href="#">ทะเบียนคุมการจัดซื้อครุภัณฑ์</a>
-                                    <a href="#">ทะเบียนคุมการจัดซื้อวัสดุ</a>
-                                    <a href="#">ดาวโหลดแบบฟอร์ม</a>
-                                </div>
+                                    <a href="https://sites.google.com/simuang.ac.th/planing-sk" target="_blank">กลุ่มงานแผนงานทั่วไป</a>
+                                    <!-- <a href="#">กลุ่มงานงบประมาณ</a>
+                                    <a href="#">กลุ่มงานบุคลากร</a>
+                                    <a href="#">กลุ่มงานวิชาการ</a> -->
+                                </div> 
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+
+                    <div class="line-link"></div>
+
+                    <div class="nav-link">
+                        <div class="link-main">
+                            <a class="text-link-main" href="#">บุคลากร</a>
+                            <i class="icon-link-main fas fa-chevron-down"></i>
+                        </div>
+                        <div class="link-dropdown">
+                            <div class="dropdown-content">
+                                <div class="list-dropdown-content">
+                                    <a href="pages/personnel.html">คณะผู้บริหารและบุคลากร</a> 
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line-link"></div>
+
+                    <div class="nav-link">
+                        <div class="link-main">
+                            <a class="text-link-main" href="#">ธุรการ</a>
+                            <i class="icon-link-main fas fa-chevron-down"></i>
+                        </div>
+                        <div class="link-dropdown">
+                            <div class="dropdown-content">
+                                <div class="list-dropdown-content">
+                                    <a href="pages/dlry66.html">ทะเบียนหนังสือนำส่ง ปี 66</a> 
+                                    <a href="pages/mrry66.html">ทะเบียนบันทึกข้อความ ปี 66</a> 
+                                    <a href="pages/riwony66.html">ทะเบียนออกเลขคำสั่ง ปี 66</a> 
+                                </div> 
+                                <div class="line-dropdown"></div>
+                                <div class="list-dropdown-content">
+                                    <a href="pages/audiovisual.html">จองระบบงานโสตทัศนศึกษา</a> 
+                                    <a href="http://www.smss-school.org/simuang/" target="_blank">ระบบสนับสนุนการบริหารจัดการสถานศึกษา</a> 
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScjvA5gL06dbfziXcNFnaXnPB1p_rcFmDCL-os6ZC-5bU6qMA/closedform" target="_blank">แบบสำรวจซ่อม (อาคารสถานที่)</a>  
+                                </div> 
+                                <div class="line-dropdown"></div>
+                                <div class="list-dropdown-content">
+                                    <a href="pages/dlry65.html">ทะเบียนหนังสือนำส่ง ปี 65</a> 
+                                    <a href="pages/rncy65.html">ทะเบียนเลขที่เกียรติบัตร ปี 65</a> 
+                                    <a href="pages/mrry66.html">ทะเบียนบันทึกข้อความ ปี 65</a> 
+                                    <a href="pages/ory65.html">ทะเบียนคำสั่ง ปี 65</a>
+                                </div> 
+                                <div class="line-dropdown"></div>
+                                <div class="list-dropdown-content">
+                                    <a href="pages/procurement.html">โปรแกรมจัดซื้อจัดจ้าง</a> 
+                                    <a href="pages/ecr.html">ทะเบียนคุมการจัดจ้าง</a> 
+                                    <a href="pages/riascwpe.html">ทะเบียนคุมการจัดซื้อครุภัณฑ์</a> 
+                                    <a href="pages/rtcmp.html">ทะเบียนคุมการจัดซื้อวัสดุ</a> 
+                                    <a href="pages/download-form.html">ดาวโหลดแบบฟอร์ม</a>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -181,7 +205,8 @@
                             <div class="slide-image"
                                 style="background-image: url(https://sv1.picz.in.th/images/2023/05/23/FqfthP.jpg)">
                             </div>
-                            <span class="slide-title">การประชุมผู้ครองนักเรียน</span>
+                            <!-- <span class="slide-title">การประชุมผู้ครองนักเรียน</span> -->
+                            <span class="slide-title">ยินดีต้อนรับสู่โรงเรียนศรีเมืองวิทยาคาร</span>
                         </div>
 
                         <div class="swiper-slide slide">
@@ -233,33 +258,65 @@
         <div class="content">
             <div class="box-press-release">
                 <div class="press-release">
-                    <div class="title">
+                    <div class="press-release-title">
                         <h1>ข่าวประชาสัมพันธ์</h1>
                     </div>
                     <div class="box-card">
 
                         <div class="card-list">
                             <div class="card-image">
-                                <img src="https://lh4.googleusercontent.com/snrCKPsVSjhNbB7pSjFSiUf1-pba8XjVO5O2JOisac1GQ5fMwWOBqb2LUC0LbIAur7rrKxUhUlrRHdLcDFETVaY=w1280"
-                                    alt="Profile Image">
+                                <img src="assets/images/image/press-release4.png" alt="">
                             </div>
                             <div class="card-txet">
                                 <div class="card-title">
-                                    <p>รับสมัครครูอัตราจ้าง</p>
+                                    <p>A Math</p>
                                 </div>
                                 <div class="card-text">
-                                    <p>การสรรหาคณะกรรมการสถานศึกษาขั้นพื้นฐาน</p>
+                                    <p>การแข่งขัน A Math</p>
                                 </div>
                             </div>
                             <div class="card-button">
-                                <a class="" href="#">อ่านเพิ่มเติม</a>
+                                <a class="" href="https://sites.google.com/simuang.ac.th/math2023/" target="_blank">อ่านเพิ่มเติม</a>
                             </div>
                         </div>
 
                         <div class="card-list">
                             <div class="card-image">
-                                <img src="https://lh4.googleusercontent.com/-11glNlz0xTRsNYFtKcwFRxHO-gMeFb8FAUGbQFIumqD1O05P41Z_cXYtYhBQM4Sw6FLX3c8fiEx8Ims-WaxlDI=w1280"
-                                    alt="Profile Image">
+                                <img src="assets/images/image/press-release3.png" alt="">
+                            </div>
+                            <div class="card-txet">
+                                <div class="card-title">
+                                    <p>สรรหาคณะกรรมการ</p>
+                                </div>
+                                <div class="card-text">
+                                    <p>สรรหาคณะกรรมการ</p>
+                                </div>
+                            </div>
+                            <div class="card-button">
+                                <a class="" href="https://drive.google.com/file/d/13d1OSXX3eKu4dCXpuw0gGaarercBkbgG/view" target="_blank">อ่านเพิ่มเติม</a>
+                            </div>
+                        </div>
+
+                        <div class="card-list">
+                            <div class="card-image">
+                                <img src="assets/images/image/press-release2.jpg" alt="">
+                            </div>
+                            <div class="card-txet">
+                                <div class="card-title">
+                                    <p>สรรหาคณะกรรมการ</p>
+                                </div>
+                                <div class="card-text">
+                                    <p>สรรหาคณะกรรมการสถานศึกษาขั้นพื้นฐาน</p>
+                                </div>
+                            </div>
+                            <div class="card-button">
+                                <a class="" href="https://drive.google.com/drive/folders/1RmAoRr0jIdRKT5q_j32CbBQk7DrkXlsQ" target="_blank">อ่านเพิ่มเติม</a>
+                            </div>
+                        </div>
+
+                        <div class="card-list">
+                            <div class="card-image">
+                                <img src="assets/images/image/press-release2.jpg" alt="">
                             </div>
                             <div class="card-txet">
                                 <div class="card-title">
@@ -270,80 +327,10 @@
                                 </div>
                             </div>
                             <div class="card-button">
-                                <a class="" href="#">อ่านเพิ่มเติม</a>
+                                <a class="" href="https://drive.google.com/file/d/1N6fDBej1MaCl-oJNRGV8Q9OEjB01QY7o/view" target="_blank">อ่านเพิ่มเติม</a>
                             </div>
                         </div>
 
-                        <div class="card-list">
-                            <div class="card-image">
-                                <img src="https://wallpapers.com/images/featured/en3dnh2zi84sgt3t.jpg"
-                                    alt="Profile Image">
-                            </div>
-                            <div class="card-txet">
-                                <div class="card-title">
-                                    <p>ปั่นทะลุจักรวาล</p>
-                                </div>
-                                <div class="card-text">
-                                    <p>กิจกรรมนักปั่นแข่งเหล็ก ครั้งที่ 1</p>
-                                </div>
-                            </div>
-                            <div class="card-button">
-                                <a class="" href="#">อ่านเพิ่มเติม</a>
-                            </div>
-                        </div>
-
-                        <div class="card-list">
-                            <div class="card-image">
-                                <img src="https://wallpapers.com/images/featured/en3dnh2zi84sgt3t.jpg"
-                                    alt="Profile Image">
-                            </div>
-                            <div class="card-txet">
-                                <div class="card-title">
-                                    <p>ปั่นทะลุจักรวาล</p>
-                                </div>
-                                <div class="card-text">
-                                    <p>กิจกรรมนักปั่นแข่งเหล็ก ครั้งที่ 1</p>
-                                </div>
-                            </div>
-                            <div class="card-button">
-                                <a class="" href="#">อ่านเพิ่มเติม</a>
-                            </div>
-                        </div>
-
-                        <div class="card-list">
-                            <div class="card-image">
-                                <img src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg"
-                                    alt="Profile Image">
-                            </div>
-                            <div class="card-txet">
-                                <div class="card-title">
-                                    <p>ทัศนศึกษา</p>
-                                </div>
-                                <div class="card-text">
-                                    <p>ไปทัศนศึกษาไกลถึงหอไอเฟล!</p>
-                                </div>
-                            </div>
-                            <div class="card-button">
-                                <a class="" href="#">อ่านเพิ่มเติม</a>
-                            </div>
-                        </div>
-                        <div class="card-list">
-                            <div class="card-image">
-                                <img src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg"
-                                    alt="Profile Image">
-                            </div>
-                            <div class="card-txet">
-                                <div class="card-title">
-                                    <p>ทัศนศึกษา</p>
-                                </div>
-                                <div class="card-text">
-                                    <p>ไปทัศนศึกษาไกลถึงหอไอเฟล!</p>
-                                </div>
-                            </div>
-                            <div class="card-button">
-                                <a class="" href="#">อ่านเพิ่มเติม</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -380,7 +367,7 @@
                                 </iframe>
                             </div>
                         </div>
-
+                        <div class="line-embed"></div>
                         <!-- Youtube -->
                         <div class="embed-youtube">
                             <h1>
@@ -401,7 +388,7 @@
 
                                 <div class="highlight-iframe-yt">
                                     <a onclick="openPopup('021nefSbM-c')"
-                                        style="position: absolute; height: 100%; width: 100%;"></a>
+                                        style="position: absolute; height: 100%; width: 100%; cursor: pointer;"></a>
 
                                     <iframe src="https://www.youtube.com/embed/021nefSbM-c" frameborder="0"
                                         allowfullscreen>
@@ -411,7 +398,7 @@
                                 <div class="list-iframe-yt">
                                     <div class="list-iframe-yt-1">
                                         <a onclick="openPopup('1A_hyi7nnyw')"
-                                            style="position: absolute; height: 100%; width: 100%;"></a>
+                                            style="position: absolute; height: 100%; width: 100%; cursor: pointer;"></a>
 
                                         <iframe src="https://www.youtube.com/embed/1A_hyi7nnyw" frameborder="0"
                                             allowfullscreen>
@@ -420,7 +407,7 @@
 
                                     <div class="list-iframe-yt-1">
                                         <a onclick="openPopup('nH4CQux6hKk')"
-                                            style="position: absolute; height: 100%; width: 100%;"></a>
+                                            style="position: absolute; height: 100%; width: 100%; cursor: pointer;"></a>
 
                                         <iframe src="https://www.youtube.com/embed/nH4CQux6hKk" frameborder="0"
                                             allowfullscreen>
@@ -429,7 +416,7 @@
 
                                     <div class="list-iframe-yt-1">
                                         <a onclick="openPopup('K5pkJlEVwCc')"
-                                            style="position: absolute; height: 100%; width: 100%;"></a>
+                                            style="position: absolute; height: 100%; width: 100%; cursor: pointer;"></a>
 
                                         <iframe src="https://www.youtube.com/embed/K5pkJlEVwCc" frameborder="0"
                                             allowfullscreen>
@@ -448,7 +435,7 @@
                 <div class="wrap-card">
 
                     <div class="list-wrap-card">
-                        <a href="">
+                        <a href="https://sites.google.com/simuang.ac.th/academic/home" target="_blank">
                             <div class="wrap-card-img">
                                 <img src="assets/images/wrap-card1.jpg" alt="">
                             </div>
@@ -458,7 +445,7 @@
                         </a>
                     </div>
                     <div class="list-wrap-card">
-                        <a href="">
+                        <a href="https://sites.google.com/simuang.ac.th/academic/curriculum/onelineclassroom" target="_blank">
                             <div class="wrap-card-img">
                                 <img src="assets/images/wrap-card2.jpg" alt="">
                             </div>
@@ -468,7 +455,7 @@
                         </a>
                     </div>
                     <div class="list-wrap-card">
-                        <a href="">
+                        <a href="https://drive.google.com/drive/folders/1KRuTkJDnJ3r4X-fdndQSc6noCjV0OTTR" target="_blank">
                             <div class="wrap-card-img">
                                 <img src="assets/images/wrap-card3.jpg" alt="">
                             </div>
@@ -478,7 +465,7 @@
                         </a>
                     </div>
                     <div class="list-wrap-card">
-                        <a href="">
+                        <a href="https://drive.google.com/drive/folders/1FmrrdvAKZbWYO5C_OxqT1i6WvuzKtEls" target="_blank">
                             <div class="wrap-card-img">
                                 <img src="assets/images/wrap-card4.jpg" alt="">
                             </div>
@@ -488,7 +475,7 @@
                         </a>
                     </div>
                     <div class="list-wrap-card">
-                        <a href="">
+                        <a href="http://simuang.vlcloud.net/" target="_blank">
                             <div class="wrap-card-img">
                                 <img src="assets/images/wrap-card5.png" alt="">
                             </div>
@@ -498,12 +485,32 @@
                         </a>
                     </div>
                     <div class="list-wrap-card">
-                        <a href="">
+                        <a href="https://drive.google.com/drive/folders/0B2G8Psd7PtvaclJNVllzZV85Y1E?resourcekey=0-p736g3ohuT8AyIWdrq3VYA" target="_blank">
                             <div class="wrap-card-img">
                                 <img src="assets/images/wrap-card6.jpg" alt="">
                             </div>
                             <div class="wrap-card-caption">
                                 <h3>ภาพกิจกรรม</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-wrap-card">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2JLCIamvPJddIE_KMFaEpwkCb1rnTiTCCorFCLlgDJe-Tqw/viewform" target="_blank">
+                            <div class="wrap-card-img">
+                                <img src="assets/images/wrap-card7.jpg" alt="">
+                            </div>
+                            <div class="wrap-card-caption">
+                                <h3>จองระบบงานโสตทัศนศึกษา</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-wrap-card">
+                        <a href="https://drive.google.com/drive/folders/0B2G8Psd7PtvaNVg2MlZEZGkzRjQ?resourcekey=0-pYVVkjoQyhWQ4to1mM-fVA&usp=sharing" target="_blank">
+                            <div class="wrap-card-img">
+                                <img src="assets/images/wrap-card8.jpg" alt="">
+                            </div>
+                            <div class="wrap-card-caption">
+                                <h3>ผลงานครู</h3>
                             </div>
                         </a>
                     </div>
@@ -520,6 +527,8 @@
                             <h4>ติดต่อ</h4>
                             <p><i class="fa fa-phone"></i> โทร: 045-251-623</p>
                             <p><i class="fa fa-envelope"></i> อีเมล: mailsk@simuang.ac.th</p>
+                            <a href="https://sites.google.com/simuang.ac.th/academic" target="_blank">
+                                <i class="fa-solid fa-globe" style="color: #fff;"></i> เว็บไซต์งานวิชาการ</a>
                             <!-- <a style="color: #2e89ff;" href="#">www.simuang.ac.th</a> -->
                         </div>
                         <div class="line-copyright" style="border-right: 2px solid #fff;"></div>
@@ -527,10 +536,11 @@
                             <h4>แฟนเพจ</h4>
                             <div class="link-copyright" style="display: flex;">
                                 <div class="link-copyright-link">
-                                    <a href="https://www.facebook.com/SrimuangSK" target="_blank"><i
-                                            class="fa-brands fa-facebook-f"></i> เพจโรงเรียนศรีเมืองวิทยาคาร</a>
-                                    <a href="https://www.facebook.com/AcademicdepartmentSK" target="_blank"><i
-                                            class="fa-brands fa-facebook-f"></i> เพจฝ่ายวิชาการ</a>
+                                    <a href="https://www.facebook.com/SrimuangSK" target="_blank">
+                                        <i class="fa-brands fa-facebook-f"></i> เพจโรงเรียนศรีเมืองวิทยาคาร</a>
+                                    <a href="https://www.facebook.com/AcademicdepartmentSK" target="_blank">
+                                        <i class="fa-brands fa-facebook-f"></i> เพจฝ่ายวิชาการ</a>
+                                    
                                 </div>
                                 <!-- <div class="div-icon">
                                         <a href="https://www.facebook.com/SrimuangSK" target="_blank">

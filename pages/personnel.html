@@ -5,237 +5,1593 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>โรงเรียนศรีเมืองวิทยาคาร</title>
+    <link rel="icon" href="assets/images/logo-sk.png" type="image/icon type">
+
     <link rel="stylesheet" href="../assets/css/personnel.css">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-
 </head>
 
 <body>
+    <!-- partial:index.partial.html -->
     <div class="container">
-        <!-- <div class="bg">
-            <img src="https://lh3.googleusercontent.com/p/AF1QipPKZU92cqpnMzYLHGhAPf2557i86RJlBJmqdVeV=s680-w680-h510"
-                alt="">
-        </div> -->
-        <!-- partial:index.partial.html -->
-        <!-- TAB CONTROLLERS -->
-        <input style="display: none;" id="panel-1-ctrl" class="panel-radios" type="radio" name="tab-radios" checked>
-        <input style="display: none;" id="panel-2-ctrl" class="panel-radios" type="radio" name="tab-radios">
-        <!-- <input id="panel-3-ctrl" class="panel-radios" type="radio" name="tab-radios"> -->
-        <!-- <input id="panel-4-ctrl" class="panel-radios" type="radio" name="tab-radios"> -->
-        <!-- <input id="panel-5-ctrl" class="panel-radios" type="radio" name="tab-radios"> -->
-        <input id="nav-ctrl" class="panel-radios" type="checkbox" name="nav-checkbox">
+        <div class="navbar">
 
-        <header id="introduction">
-            <h1>บุคลากร</h1>
-        </header>
-
-        <!-- TABS LIST -->
-        <ul id="tabs-list">
-            <!-- MENU TOGGLE -->
-            <label id="open-nav-label" for="nav-ctrl"></label>
-            <li id="li-for-panel-1">
-                <label class="panel-label" for="panel-1-ctrl">คณะผู้บริหาร</label>
-            </li><!--INLINE-BLOCK FIX
--->
-            <li id="li-for-panel-2">
-                <label class="panel-label" for="panel-2-ctrl">ข้อมูลครู/บุคลากร</label>
-            </li><!--INLINE-BLOCK FIX
--->
-            <label id="close-nav-label" for="nav-ctrl">Close</label>
-        </ul>
-
-        <!-- THE PANELS -->
-        <article id="panels">
-            <div class="container">
-                <section id="panel-1">
-                    <main>
-
-                        <h1>คณะผู้บริหาร</h1>
-                        <div class="box-management-team">
-                            <div class="director">
-                                <div class="avatar">
-                                    <img src="../assets/images/school director.jpg" alt="director">
-                                </div>
-                                <div class="info">
-                                    <h2>ว่าที่ร้อยตรีเรืองยศ ธนาธิบดี</h2>
-                                    <h3>ผู้อำนวยการ</h3>
-                                    <h3>โรงเรียนศรีเมืองวิทยาคาร</h3>
-                                </div>
-                            </div>
-                            <div style="width: 100%; border-bottom: 1px solid grey"></div>
-
-                            <div class="deputy-director">
-
-                                <div class="list-deputy-director">
-                                    <div class="avatar">
-                                        <img src="../assets/images/deputy_director1.jpg" alt="director">
-                                    </div>
-                                    <div class="info">
-                                        <h3>นายทองพูน โทสิงห์</h3>
-                                        <h4>รองผู้อำนวยการ</h4>
-                                        <h4>บริหารงานทั่วไปและกิจการนักเรียน</h4>
-                                    </div>
-                                </div>
-                                <div class="list-deputy-director">
-                                    <div class="avatar">
-                                        <img src="../assets/images/deputy_director2.jpg" alt="director">
-                                    </div>
-                                    <div class="info">
-                                        <h3>นายประจวบ กำเนิดสิงห์</h3>
-                                        <h4>รองผู้อำนวยการ</h4>
-                                        <h4>บริหารงานวิชาการ</h4>
-                                    </div>
-                                </div>
-                                <div class="list-deputy-director">
-                                    <div class="avatar">
-                                        <img src="../assets/images/deputy_director3.jpg" alt="director">
-                                    </div>
-                                    <div class="info">
-                                        <h3>นางฉวีวรรณ แสงทอง</h3>
-                                        <h4>รองผู้อำนวยการ</h4>
-                                        <h4>บริหารแผนงานและงบประมาณ</h4>
-                                    </div>
-                                </div>
-                                <div class="list-deputy-director">
-                                    <div class="avatar">
-                                        <img src="../assets/images/deputy_director4.jpg" alt="director">
-                                    </div>
-                                    <div class="info">
-                                        <h3>นายศรัณยู เนตรมณี</h3>
-                                        <h4>รองผู้อำนวยการ</h4>
-                                        <h4>บริหารงานบุคคล</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </main>
-                </section>
-                <section id="panel-2">
-                    <main>
-                        <h1>ข้อมูลครู/บุคลากร</h1>
-                        <div class="teacher-box">
-                            <div class="teacher">
-                                <div class="category">
-                                    <h1>หมวดหมู่ภาษาไทย</h1>
-                                </div>
-                                <div class="box-list-teacher">
-                                    <div class="list-teacher">
-                                        <div class="avatar">
-                                            <img src="https://avatarfiles.alphacoders.com/315/315434.jpg" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h2>Minee Master</h2>
-                                            <h3>ครูชำนาญการพิเศษ</h3>
-                                        </div>
-                                    </div>
-                                    <div class="list-teacher">
-                                        <div class="avatar">
-                                            <img src="https://avatarfiles.alphacoders.com/315/315434.jpg" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h2>Minee Master</h2>
-                                            <h3>ครูชำนาญการพิเศษ</h3>
-                                        </div>
-                                    </div>
-                                    <div class="list-teacher">
-                                        <div class="avatar">
-                                            <img src="https://avatarfiles.alphacoders.com/315/315434.jpg" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h2>Minee Master</h2>
-                                            <h3>ครูชำนาญการพิเศษ</h3>
-                                        </div>
-                                    </div>
-                                    <div class="list-teacher">
-                                        <div class="avatar">
-                                            <img src="https://avatarfiles.alphacoders.com/315/315434.jpg" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h2>Minee Master</h2>
-                                            <h3>ครูชำนาญการพิเศษ</h3>
-                                        </div>
-                                    </div>
-                                    <div class="list-teacher">
-                                        <div class="avatar">
-                                            <img src="https://avatarfiles.alphacoders.com/315/315434.jpg" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h2>Minee Master</h2>
-                                            <h3>ครูชำนาญการพิเศษ</h3>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <hr>
-                                <div class="category">
-                                    <h1>หมวดหมู่ภาษาต่างประเทศ</h1>
-                                </div>
-                                <div class="box-list-teacher">
-                                    <div class="list-teacher">
-                                        <div class="avatar">
-                                            <img src="https://avatarfiles.alphacoders.com/296/296277.jpg" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h2>Minee Master</h2>
-                                            <h3>ครูชำนาญการพิเศษ</h3>
-                                        </div>
-                                    </div>
-                                    <div class="list-teacher">
-                                        <div class="avatar">
-                                            <img src="https://avatarfiles.alphacoders.com/296/296277.jpg" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h2>Minee Master</h2>
-                                            <h3>ครูชำนาญการพิเศษ</h3>
-                                        </div>
-                                    </div>
-                                    <div class="list-teacher">
-                                        <div class="avatar">
-                                            <img src="https://avatarfiles.alphacoders.com/296/296277.jpg" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h2>Minee Master</h2>
-                                            <h3>ครูชำนาญการพิเศษ</h3>
-                                        </div>
-                                    </div>
-                                    <div class="list-teacher">
-                                        <div class="avatar">
-                                            <img src="https://avatarfiles.alphacoders.com/296/296277.jpg" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h2>Minee Master</h2>
-                                            <h3>ครูชำนาญการพิเศษ</h3>
-                                        </div>
-                                    </div>
-                                    <div class="list-teacher">
-                                        <div class="avatar">
-                                            <img src="https://avatarfiles.alphacoders.com/296/296277.jpg" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h2>Minee Master</h2>
-                                            <h3>ครูชำนาญการพิเศษ</h3>
-                                        </div>
-                                    </div>
-                                    <div class="list-teacher">
-                                        <div class="avatar">
-                                            <img src="https://avatarfiles.alphacoders.com/296/296277.jpg" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h2>Minee Master</h2>
-                                            <h3>ครูชำนาญการพิเศษ</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </main>
-                </section>
+            <div class="box-navbar">
+                <div class="nav-title">
+                    <div class="logo">
+                        <img src="../assets/images/logo-sk.png" alt="">
+                    </div>
+                    <div class="text">
+                        <a class="title-text textani" href="#">โรงเรียนศรีเมืองวิทยาคาร</a>
+                        <a class="title-subtitle textani" href="#">Simuang Wittayakarn School</a>
+                    </div>
+                </div>
+                <div class="toggle-res" id="toggle-button">
+                    <div class="icon">
+                        <i id="icon-toggle-button" class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
             </div>
-        </article>
+
+            <!--  -->
+
+            <div class="box-link-bg" id="box-link-hidden">
+                <div class="box-link">
+                    <div class="nav-link">
+                        <div class="link-main">
+                            <a class="text-link-main" href="../index.html">หน้าแรก</a>
+                            <i style="display: none;" class="icon-link-main fas fa-chevron-down"></i>
+                        </div>
+                        <div style="display: none;" class="link-dropdown">
+                            <div class="dropdown-content">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line-link"></div>
+
+                    <div class="nav-link">
+                        <div class="link-main">
+                            <a class="text-link-main" href="#">เกี่ยวกับโรงเรียน</a>
+                            <i class="icon-link-main fas fa-chevron-down"></i>
+                        </div>
+                        <div class="link-dropdown">
+                            <div class="dropdown-content">
+                                <div class="list-dropdown-content">
+                                    <a href="../pages/school-history.html">ประวัติโรงเรียน</a>
+                                    <a href="https://data.bopp-obec.info/emis/schooldata-view.php?School_ID=1034711106&Area_CODE=0"
+                                        target="_blank">ข้อมูลพื้นฐาน</a>
+                                </div>
+                                <div class="line-dropdown"></div>
+                                <div class="list-dropdown-content">
+                                    <a href="../pages/school-philosophy.html">ปรัชญา ตรา สีประจำโรงเรียน</a>
+                                    <a href="../pages/identity.html">เอกลักษณ์ อัตลักษณ์</a>
+                                    <a href="../pages/objectives.html">วิสัยทัศน์/พันธกิจ/เป้าประสงค์</a>
+                                    <a href="../pages/strategy.html">กลยุทธ์</a>
+                                </div>
+                                <div class="line-dropdown"></div>
+                                <div class="list-dropdown-content">
+                                    <a href="../pages/map.html">แผนที่/การเดินทาง</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line-link"></div>
+
+                    <div class="nav-link">
+                        <div class="link-main">
+                            <a class="text-link-main" href="#">หลักสูตรการสอน </a>
+                            <i class="icon-link-main fas fa-chevron-down"></i>
+                        </div>
+                        <div class="link-dropdown">
+                            <div class="dropdown-content">
+                                <div class="list-dropdown-content">
+                                    <a href="../pages/curriculum.html">หลักสูตรโรงเรียน</a>
+                                    <a href="https://sites.google.com/simuang.ac.th/academic/curriculum/onelineclassroom"
+                                        target="_blank">เรียนออนไลน์</a>
+                                    <a href="http://simuang.vlcloud.net/" target="_blank">ห้องสมุดดิจิทัล</a>
+                                </div>
+                                <div class="line-dropdown"></div>
+                                <div class="list-dropdown-content">
+                                    <a href="../pages/student-guide.html">คู่มือนักเรียน</a>
+                                    <a href="https://sites.google.com/simuang.ac.th/academic/home"
+                                        target="_blank">เว็บไซต์งานวิชาการ</a>
+                                </div>
+                                <div class="line-dropdown"></div>
+                                <div class="list-dropdown-content">
+                                    <a href="http://www.smss-school.org/rally/" target="_blank">ระบบกิจกรรมชุมนุม</a>
+                                    <a href="https://sites.google.com/simuang.ac.th/dulae-sk"
+                                        target="_blank">ระบบดูแลช่วยเหลือนักเรียน</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line-link"></div>
+
+                    <div class="nav-link">
+                        <div class="link-main">
+                            <a class="text-link-main" href="#">กลุ่มงาน</a>
+                            <i class="icon-link-main fas fa-chevron-down"></i>
+                        </div>
+                        <div class="link-dropdown">
+                            <div class="dropdown-content">
+                                <div class="list-dropdown-content">
+                                    <a href="https://sites.google.com/simuang.ac.th/planing-sk"
+                                        target="_blank">กลุ่มงานแผนงานทั่วไป</a>
+                                    <!-- <a href="#">กลุ่มงานงบประมาณ</a>
+                                <a href="#">กลุ่มงานบุคลากร</a>
+                                <a href="#">กลุ่มงานวิชาการ</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line-link"></div>
+
+                    <div class="nav-link">
+                        <div class="link-main">
+                            <a class="text-link-main" href="#">บุคลากร</a>
+                            <i class="icon-link-main fas fa-chevron-down"></i>
+                        </div>
+                        <div class="link-dropdown">
+                            <div class="dropdown-content">
+                                <div class="list-dropdown-content">
+                                    <a href="../pages/personnel.html">คณะผู้บริหารและบุคลากร</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line-link"></div>
+
+                    <div class="nav-link">
+                        <div class="link-main">
+                            <a class="text-link-main" href="#">ธุรการ</a>
+                            <i class="icon-link-main fas fa-chevron-down"></i>
+                        </div>
+                        <div class="link-dropdown">
+                            <div class="dropdown-content">
+                                <div class="list-dropdown-content">
+                                    <a href="../pages/dlry66.html">ทะเบียนหนังสือนำส่ง ปี 66</a>
+                                    <a href="../pages/mrry66.html">ทะเบียนบันทึกข้อความ ปี 66</a>
+                                    <a href="../pages/riwony66.html">ทะเบียนออกเลขคำสั่ง ปี 66</a>
+                                </div>
+                                <div class="line-dropdown"></div>
+                                <div class="list-dropdown-content">
+                                    <a href="../pages/audiovisual.html">จองระบบงานโสตทัศนศึกษา</a>
+                                    <a href="http://www.smss-school.org/simuang/"
+                                        target="_blank">ระบบสนับสนุนการบริหารจัดการสถานศึกษา</a>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScjvA5gL06dbfziXcNFnaXnPB1p_rcFmDCL-os6ZC-5bU6qMA/closedform"
+                                        target="_blank">แบบสำรวจซ่อม (อาคารสถานที่)</a>
+                                </div>
+                                <div class="line-dropdown"></div>
+                                <div class="list-dropdown-content">
+                                    <a href="../pages/dlry65.html">ทะเบียนหนังสือนำส่ง ปี 65</a>
+                                    <a href="../pages/rncy65.html">ทะเบียนเลขที่เกียรติบัตร ปี 65</a>
+                                    <a href="../pages/mrry66.html">ทะเบียนบันทึกข้อความ ปี 65</a>
+                                    <a href="../pages/ory65.html">ทะเบียนคำสั่ง ปี 65</a>
+                                </div>
+                                <div class="line-dropdown"></div>
+                                <div class="list-dropdown-content">
+                                    <a href="../pages/procurement.html">โปรแกรมจัดซื้อจัดจ้าง</a>
+                                    <a href="../pages/ecr.html">ทะเบียนคุมการจัดจ้าง</a>
+                                    <a href="../pages/riascwpe.html">ทะเบียนคุมการจัดซื้อครุภัณฑ์</a>
+                                    <a href="../pages/rtcmp.html">ทะเบียนคุมการจัดซื้อวัสดุ</a>
+                                    <a href="../pages/download-form.html">ดาวโหลดแบบฟอร์ม</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="box">
+                <main class="main">
+                    <div class="title-page">
+                        <h1>บุคลากร</h1>
+                    </div>
+                    <div class="tab">
+                        <div class="tab-menu">
+                            <button class="tab-menu-link is-active" data-content="item-1">
+                                <span data-title="item-1">คณะผู้บริหาร</span>
+                            </button>
+                            <button class="tab-menu-link" data-content="item-2">
+                                <span data-title="item-2">ข้อมูลครู/บุคลากร</span>
+                            </button>
+                            <button class="tab-menu-link" data-content="item-3">
+                                <span data-title="item-2">รายชื่อครู</span>
+                            </button>
+                        </div>
+                        <div class="tab-bar">
+                            <div class="tab-bar-content is-active" id="item-1">
+                                <div class="texts">
+                                    <h2 class="title">คณะผู้บริหาร</h2>
+                                    <p class="paragraph">
+
+                                    <div class="box-management-team">
+                                        <div class="director">
+                                            <div class="avatar">
+                                                <img src="../assets/images/school director.jpg" alt="director">
+                                            </div>
+                                            <div class="info">
+                                                <h2>ว่าที่ร้อยตรีเรืองยศ ธนาธิบดี</h2>
+                                                <h3>ผู้อำนวยการ</h3>
+                                                <h3>โรงเรียนศรีเมืองวิทยาคาร</h3>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+
+                                        <div class="deputy-director">
+
+                                            <div class="list-deputy-director">
+                                                <div class="avatar">
+                                                    <img src="../assets/images/deputy_director1.jpg" alt="director">
+                                                </div>
+                                                <div class="info">
+                                                    <h3>นายทองพูน โทสิงห์</h3>
+                                                    <h4>รองผู้อำนวยการ</h4>
+                                                    <h4>บริหารงานทั่วไปและกิจการนักเรียน</h4>
+                                                </div>
+                                            </div>
+                                            <div class="list-deputy-director">
+                                                <div class="avatar">
+                                                    <img src="../assets/images/deputy_director2.jpg" alt="director">
+                                                </div>
+                                                <div class="info">
+                                                    <h3>นายประจวบ กำเนิดสิงห์</h3>
+                                                    <h4>รองผู้อำนวยการ</h4>
+                                                    <h4>บริหารงานวิชาการ</h4>
+                                                </div>
+                                            </div>
+                                            <div class="list-deputy-director">
+                                                <div class="avatar">
+                                                    <img src="../assets/images/deputy_director3.jpg" alt="director">
+                                                </div>
+                                                <div class="info">
+                                                    <h3>นางฉวีวรรณ แสงทอง</h3>
+                                                    <h4>รองผู้อำนวยการ</h4>
+                                                    <h4>บริหารแผนงานและงบประมาณ</h4>
+                                                </div>
+                                            </div>
+                                            <div class="list-deputy-director">
+                                                <div class="avatar">
+                                                    <img src="../assets/images/deputy_director4.jpg" alt="director">
+                                                </div>
+                                                <div class="info">
+                                                    <h3>นายศรัณยู เนตรมณี</h3>
+                                                    <h4>รองผู้อำนวยการ</h4>
+                                                    <h4>บริหารงานบุคคล</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab-bar-content" id="item-2">
+                                <div class="texts">
+                                    <h2 class="title">ข้อมูลครู/บุคลากร</h2>
+                                    <div class="line"></div>
+                                    <p class="paragraph">
+
+                                    <div class="teacher-box">
+                                        <div class="teacher">
+                                            <!-- ==================== -->
+                                            <div class="category">
+                                                <h1>หมวดหมู่ภาษาไทย</h1>
+                                            </div>
+                                            <div class="box-list-teacher">
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/thai/1.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางอนงลักษณ์ วงศ์คำ</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                        <h3>หัวหน้ากลุ่มสาระการเรียนร</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/thai/2.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวอุรัก อุ่นใจ</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/thai/3.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางทิพยรัตน์ กำเนิดสิงห์</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/thai/4.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสุธิดา สอนทอง</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/thai/5.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวจารุพรรณ พิมพานิช</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/thai/6.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายณัฐพล วัดภักดี</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/thai/7.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวศิวชญา สายบุตร</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/thai/8.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวเพียงใจ คำพู</h2>
+                                                        <h3>คร</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/thai/9.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวสุรีรัตน์ รุ้งแก้ว</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/thai/10.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวพิมพ์ลภัทร์ สิมานุรักษ์</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/thai/11.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวปิยะนุช แก้วงาม</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/thai/12.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>ว่าที่ร้อยตรีหญิงอรอนงค์ ชมภูเขา</h2>
+                                                        <h3>ครูผู้ช่วย</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/thai/13.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวสุพิชฌาย์ เชื้อเพราะ</h2>
+                                                        <h3>ครูผู้ช่วย</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="line"></div>
+                                            <div class="category">
+                                                <h1>กลุ่มสาระการเรียนรู้คณิตศาสตร์</h1>
+                                            </div>
+                                            <div class="box-list-teacher">
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/1.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายอนุสิษฐ สำเภา</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                        <h3>หัวหน้ากลุ่มสาระการเรียนรู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/2.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางไกรวรรณ คำมูล</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/3.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสุวิมล เสียงล้ำ</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/4.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายปกรณ์ โอษฐิเวช</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/5.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางภัทราพร กอมณ</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/6.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางจุฬาลักษณ์ ใจดี</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/7.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวตรีธนา ฐิตะสาร</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/8.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายรัฐศาสตร์ โคตรสีหา</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/9.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายเกรียงศักดิ์ ทรัพย์ศิร</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/10.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายพีระพงศ์ สอนทอง</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/11.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวสุกัญญา สีดาน้อย</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/12.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางพิรินธร ผดาเวช</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/13.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางยุรพร เกษร</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/14.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวนิตานันทน์ มาตะชาต</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/15.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวกิตติภา ธงอาษา</h2>
+                                                        <h3>พนักงานราชการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/16.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวนิตติยา ศรีมาคำ</h2>
+                                                        <h3>ครูอัตราจ้าง</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/math/17.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวอภิชนา มีคุณ</h2>
+                                                        <h3>ครูอัตราจ้าง</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="line"></div>
+                                            <div class="category">
+                                                <h1>กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี</h1>
+                                            </div>
+                                            <div class="box-list-teacher">
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/1.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางณัฐริณีย์ สาระพัฒน์</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                        <h3>หัวหน้ากลุ่มสาระการเรียนรู้</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/2.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายชัยรัตน์ ปรัสพันธ</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/3.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางเกษมศรี สมหมาย</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/4.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางทัศณี สุนิพันธ์</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/5.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายสุทัศ ศรีบุระ</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/6.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวสุภวรรณ ธิวงศ์ษา</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/7.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวมาฆศินันจา ทองมูล</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/8.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางปิยวดี ปัฐพี</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/9.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวกฤติยาณี เจริญลอย</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/10.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางมาลาพร พินธุกรณ์</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/11.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวพันทิพา ช่วงชิง</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/12.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางศรีฟ้า บุญยัง</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/13.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายชนาธิปัตย์ เจริญศักดิ์</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/14.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>สิบเอกกฤษ ศรีสะอาด</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/15.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายธนพัฒน์ ทับไธสง</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/16.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายวิรัตน์ รังสุวรรณ์</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/17.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายรณกฤต ยิ่งยง</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/18.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวธิดารัตน์ วิลามาศ</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/19.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาววนิดา กำแมด</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/20.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวนฤตยา อาทิเวช</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/21.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวตตินันท์ จิตตโคตร</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/22.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวจิรัชญา บุดดีสิงห</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/23.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวบุผาวัลย์ คำประวัติ</h2>
+                                                        <h3>ครูผู้ช่วย</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/24.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายเชาวฤทธิ์ แก้วกัญญา</h2>
+                                                        <h3>ครูผู้ช่วย</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/25.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวจินตนา คูณสุข</h2>
+                                                        <h3>พนักงานราชการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/26.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวเจนจิรา จันชุลี</h2>
+                                                        <h3>พนักงานราชการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/27.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายตระการเกียรติ ไชยสัตย</h2>
+                                                        <h3>พนักงานราชการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/sci-tech/28.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายวรวุฒิ สุวรรณา</h2>
+                                                        <h3>พนักงานราชการ</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="line"></div>
+                                            <div class="category">
+                                                <h1>กลุ่มสาระการเรียนรู้สังคมศึกษา ศาสนาและวัฒนธรรม</h1>
+                                            </div>
+                                            <div class="box-list-teacher">
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/social-tudies/1.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายมังกร จันทลา</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                        <h3>หัวหน้ากลุ่มสาระการเรียนรู้</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/social-tudies/2.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางยลภัทร ถาวรเจริญกุล</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/social-tudies/3.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางบังอร ปรัสพันธ์</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/social-tudies/4.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายอุทวน สุนิพันธ์</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/social-tudies/5.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางวิบูลย์ นพเทาว์</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/social-tudies/6.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายสวัสดิชัย ใสเนตร</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/social-tudies/7.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวสุวิมล มิ่งมูล</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/social-tudies/8.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสายสุดา โทสิงห์</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/social-tudies/9.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายโยธิน อาธิเวช</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/social-tudies/10.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสุรีย์พร แก้วกัญญา</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/social-tudies/11.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางรินทร์นภา ควรชม</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/social-tudies/12.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายสิปปนนท์ การะเกษ</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/social-tudies/13.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวสุกัญญา สารเศวก</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/social-tudies/14.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายอนุรักษ์ ชมบูรณ์</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/social-tudies/15.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวประกายดาว ปาสาบุตร</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="line"></div>
+                                            <div class="category">
+                                                <h1>กลุ่มสาระการเรียนรู้สุขศึกษาและพลศึกษา</h1>
+                                            </div>
+                                            <div class="box-list-teacher">
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/hpe/1.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายพละชัย ปราสาทศร</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                        <h3>หัวหน้ากลุ่มสาระการเรียนรู้</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/hpe/2.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางทิพพาวรรณ สมหมาย</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/hpe/3.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายคมกฤช บุญนันท์</h2>
+                                                        <h3>คร</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/hpe/4.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายปรีชา สีคำแท</h2>
+                                                        <h3>พนักงานราชการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/hpe/5.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายภานุพงษ์ ภูสิงห</h2>
+                                                        <h3>ครูอัตราจ้าง</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="line"></div>
+                                            <div class="category">
+                                                <h1>กลุ่มสาระการเรียนรู้ศิลปะ</h1>
+                                            </div>
+                                            <div class="box-list-teacher">
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/art/1.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายอิศรา วรนาม</h2>
+                                                        <h3>ครู</h3>
+                                                        <h3>หัวหน้ากลุ่มสาระการเรียนรู้</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/art/2.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายกฤตพงศ์ กฤตเวทิน</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/art/3.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางอนงค์นาฎ ไข่มุกด์</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/art/4.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวบุศราทิพย์ ง้าวทอง</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/art/5.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายกฤษณะ ละออเหล่า</h2>
+                                                        <h3>ครูผู้ช่วย</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/art/6.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายปริยวัฒน์ อ่อนแสง</h2>
+                                                        <h3>ครูผู้ช่วย</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/art/7.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวดุษฎี บุญศร</h2>
+                                                        <h3>ครูอัตราจ้าง</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="line"></div>
+                                            <div class="category">
+                                                <h1>กลุ่มสาระการเรียนรู้การงานอาชีพ</h1>
+                                            </div>
+                                            <div class="box-list-teacher">
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/career/1.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายจักรพงศ์ พรหมสิทธิ์</h2>
+                                                        <h3>ครู</h3>
+                                                        <h3>หัวหน้ากลุ่มสาระการเรียนรู้</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/career/2.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางจันทร์เพ็ญ กัญญะลา</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/career/3.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายนิรันดร์ ป้องสิงห์</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/career/4.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวกฤษณวรรณ วงศิริ</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/career/5.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวธีรนุช เครือพยัคฆ์</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/career/6.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางทักษิณา พิทักษา</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/career/7.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายอรุณศักดิ์ ศรีมาคำ</h2>
+                                                        <h3>ครูอัตราจ้าง</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/career/8.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสุภาภัค ศรียา</h2>
+                                                        <h3>ครูอัตราจ้าง</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="line"></div>
+                                            <div class="category">
+                                                <h1>กลุ่มสาระการเรียนรู้สาระภาษาต่างประเทศ</h1>
+                                            </div>
+                                            <div class="box-list-teacher">
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/1.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายณัฐปกรณ์ คงรอด</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                        <h3>หัวหน้ากลุ่มสาระการเรียนรู้</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/2.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาววิไลวรรณ กิ่งสกุล</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/3.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวปิยวรรณ วรบุตร</h2>
+                                                        <h3>ครูชำนาญการพิเศษ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/4.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวจินตนา วัฒราช</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/5.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวจุไรพร ศรีเข้ม</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/6.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางเอื้อมพร ชาริชา</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/7.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวสุธาสินี กิ่งสกุล</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/8.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวนันทนา อินทนาม</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/9.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายรัชพล ภักดีไทย</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/10.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายจิระพงษ์ แสงวงศ์</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/11.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางปิยะกาญจณ์ สำเภา</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/12.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวทัตชา อินทรสด</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/13.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวจิราภา บุญเลิศ</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/14.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาววรรณนิษา หวังลาภ</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/15.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวศิริรัตน์ วงค์ตลาด</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/16.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวสิณี บัวผัน</h2>
+                                                        <h3>ครู</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/17.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวจิราพร รวมวงศ์</h2>
+                                                        <h3>พนักงานราชการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/18.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวลำยงค์ แสนทวีสุข</h2>
+                                                        <h3>ครูอัตราจ้าง</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/19.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวศศิศิริ แก้วสด</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-language/20.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสาวศิริวรรณ แก้วกัญญา</h2>
+                                                        <h3>ครูชำนาญการ</h3>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="line"></div>
+                                            <div class="category">
+                                                <h1>ครูพิเศษชาวต่างชาติ</h1>
+                                            </div>
+                                            <div class="box-list-teacher">
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-tutor/1.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>Mr.Romeo Bordallo Jr.</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-tutor/2.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>Mrs. Cheryl Lucenara Bordallo</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-tutor/3.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>Ms. Rudialyn Batucol</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/foreign-tutor/4.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>Mr. Anthony Hudson</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="line"></div>
+                                            <div class="category">
+                                                <h1>ลูกจ้างประจำและนักการภารโรง</h1>
+                                            </div>
+                                            <div class="box-list-teacher">
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/janitor/1.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายจิรวัฒน์ กออ่อน</h2>
+                                                        <h3>พนักงานพัสดุ ระดับ ๔</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/janitor/2.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายอิทธิ ศรีลาเลิศ</h2>
+                                                        <h3>ช่างสี ระดับ ช ๔</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/janitor/3.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายวระจิตย์ ผลจันทร์</h2>
+                                                        <h3>ช่างไม้ ระดับ ช ๔</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/janitor/4.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายบุญถัน ทองล้ำ</h2>
+                                                        <h3>พนักงานบริการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/janitor/5.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายสำราญ ประสมศรี</h2>
+                                                        <h3>พนักงานบริการ</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/janitor/6.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นายธนาพิพัฒน์ สยามล</h2>
+                                                        <h3>พนักงานรักษาความปลอดภัย</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="line"></div>
+                                            <div class="category">
+                                                <h1>แม่บ้าน</h1>
+                                            </div>
+                                            <div class="box-list-teacher">
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/maid/1.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางเบญศักดิ์ อุตสียา</h2>
+                                                        <h3>แม่บ้านอาคาร ๑</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/maid/2.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสุพัตรา ศุภษร</h2>
+                                                        <h3>แม่บ้านอาคาร ๒</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/maid/3.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางคูณ แสนทวีสุข</h2>
+                                                        <h3>แม่บ้านอาคาร ๓</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/maid/4.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางเมตตา จันทร์พา</h2>
+                                                        <h3>แม่บ้านอาคาร ๔</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/maid/5.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางสายใจ สายละดา</h2>
+                                                        <h3>แม่บ้านอาคาร ๕</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="list-teacher">
+                                                    <div class="avatar">
+                                                        <img src="../assets/images/personnels/maid/6.jpeg">
+                                                    </div>
+                                                    <div class="info">
+                                                        <h2>นางหนูการ สุขใจ</h2>
+                                                        <h3>แม่บ้านดูแลความสะอาด</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ==================== -->
+                                        </div>
+                                    </div>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab-bar-content" id="item-3">
+                                <div class="texts">
+                                    <h2 class="title">รายชื่อครู</h2>
+                                    <div class="line"></div>
+                                    <div class="paragraph">
+
+                                        <div class="embed">
+                                            <iframe
+                                                src="https://docs.google.com/spreadsheets/d/1P4jnz9GcGs0AoEJjauQcTw9_POkLHScU/preview?authuser=0">
+                                            </iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </main>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="copyright">
+                <div class="box-copyright">
+                    <div class="box-copyright-list">
+                        <h4>ติดต่อ</h4>
+                        <p><i class="fa fa-phone"></i> โทร: 045-251-623</p>
+                        <p><i class="fa fa-envelope"></i> อีเมล: mailsk@simuang.ac.th</p>
+                        <a style="color: #2e89ff;" href="#">www.simuang.ac.th</a>
+                    </div>
+                    <div class="line-copyright" style="border-right: 2px solid #fff;"></div>
+                    <div class="box-copyright-list">
+                        <h4>แฟนเพจ</h4>
+                        <div class="link-copyright" style="display: flex;">
+                            <div class="link-copyright-link">
+                                <a href="https://www.facebook.com/SrimuangSK" target="_blank"><i
+                                        class="fa-brands fa-facebook-f"></i> เพจโรงเรียนศรีเมืองวิทยาคาร</a>
+                                <a href="https://www.facebook.com/AcademicdepartmentSK" target="_blank"><i
+                                        class="fa-brands fa-facebook-f"></i> เพจฝ่ายวิชาการโรงเรียนศรีเมืองวิทยาคาร</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-copyright">
+                    <p>โรงเรียนศรีเมืองวิทยาคาร ตำบลนาคำ อำเภอศรีเมืองใหม่ จังหวัดอุบลราชธานี 34250</p>
+                    <p>สำนักงานเขตพื้นที่การศึกษามัธยมศึกษาอุบลราชธานี อำนาจเจริญ </p>
+                    <p>สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน</p>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- partial -->
+    <script src="../assets/js/personnel.js"></script>
+
+    <script src="../assets/js/navbar.js"></script>
 </body>
 
 </html>

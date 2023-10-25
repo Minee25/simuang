@@ -3,9 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
-* { 
-    /* outline: 1px solid red; */
-}
 .footer {
     font-family: 'Kanit', Arial, sans-serif;
     bottom: 0;
@@ -23,7 +20,6 @@
     color: #fff;
 }
 
-
 .box-copyright {
     padding-bottom: 30px;
     display: flex;
@@ -33,19 +29,19 @@
 
 .box-copyright-list {
     margin: 0 30px;
-    /* margin-bottom: 20px; */
 }
 
 .box-copyright-list h4 {
     color: yellow;
 }
+ 
 
 .link-copyright-link {
     display: flex;
     flex-direction: column;
 }
 
-.link-copyright-link a {
+.box-copyright a {
     color: #2e89ff;
 }
 
@@ -57,7 +53,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
     .line-copyright {
         display: none;
     }
@@ -68,10 +64,10 @@
     }
 
     .box-copyright {
-        display: flex;
-        /* align-items: center; */
+        display: flex; 
         justify-content: center;
         text-align: center;
+        flex-direction: column;
     }
 
     .box-copyright-list {

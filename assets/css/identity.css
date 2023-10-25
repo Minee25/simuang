@@ -43,6 +43,7 @@ html {
 }
 
 .title {
+    text-align: center;
     margin: 50px 0;
     font-size: 34px;
     color: #226e93;
@@ -63,4 +64,14 @@ html {
 ul li {
     list-style: decimal;
     text-align: start;
+}
+
+@media (max-width: 768px) {
+    .box {
+        padding: 0 20px;
+    }
+
+    .title {
+        font-size: 5vw;
+    }
 }

@@ -31,6 +31,7 @@ html {
     align-items: center;
 }
 
+
 .box-history {
     width: 100%;
     max-width: 1300px;
@@ -42,7 +43,9 @@ html {
     align-items: center;
 }
 
-.title { 
+.title {
+    display: flex;
+    justify-content: center;
     margin: 50px 0;
     font-size: 34px;
     color: #226e93;
@@ -50,4 +53,14 @@ html {
 
 .text p::first-letter {
     margin-left: 25px;
+}
+
+@media (max-width: 768px) {
+    .box-history {
+        padding: 0 20px;
+    }
+
+    .title {
+        font-size: 6vw;
+    }
 }
